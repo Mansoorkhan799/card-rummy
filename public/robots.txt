@@ -26,7 +26,6 @@
 
 # Allow search engines, but prevent AI training
 User-agent: *
-Content-signal: search=yes,ai-input=yes,ai-train=no
 Allow: /
 Disallow: /api/
 Disallow: /admin/
