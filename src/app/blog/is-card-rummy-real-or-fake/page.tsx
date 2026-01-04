@@ -38,8 +38,49 @@ export const metadata: Metadata = {
 };
 
 export default function CardRummyRealOrFakePage() {
+  // Schema.org structured data for blog post
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Is Card Rummy Real or Fake to Earn Money? - Complete Guide 2026",
+    "description": "Discover if Card Rummy app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps.",
+    "image": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+    "author": {
+      "@type": "Organization",
+      "name": "Card Rummy",
+      "url": "https://cardrummyapp.com.pk"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Card Rummy",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp"
+      }
+    },
+    "datePublished": "2026-01-03",
+    "dateModified": "2026-01-03",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://cardrummyapp.com.pk/blog/is-card-rummy-real-or-fake"
+    },
+    "articleSection": "Gaming",
+    "keywords": "Card Rummy real or fake, Card Rummy legit, Card Rummy Pakistan, Card Rummy safety",
+    "articleBody": "Complete guide about Card Rummy legitimacy, payment methods like JazzCash and EasyPaisa, and safety tips for Pakistani players.",
+    "inLanguage": "en-US",
+    "about": {
+      "@type": "Thing",
+      "name": "Card Rummy App Legitimacy"
+    }
+  };
+
   return (
     <article className="py-12 px-4 md:px-8 max-w-4xl mx-auto">
+      {/* Schema.org JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm">
         <Link href="/" className="text-[#0ea5e9] hover:underline">Home</Link>

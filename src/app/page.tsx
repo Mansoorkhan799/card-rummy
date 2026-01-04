@@ -48,8 +48,79 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  // Schema.org structured data for SEO
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://cardrummyapp.com.pk/#website",
+        "url": "https://cardrummyapp.com.pk/",
+        "name": "Card Rummy",
+        "description": "Pakistan's premier card game platform with Teen Patti, Rummy, Dragon Tiger and more",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://cardrummyapp.com.pk/#organization",
+        "name": "Card Rummy",
+        "url": "https://cardrummyapp.com.pk/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+          "width": 512,
+          "height": 512
+        },
+        "sameAs": [
+          "https://www.facebook.com/share/1at8tjJcje/"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "support@cardrummyapp.com.pk",
+          "contactType": "Customer Support",
+          "areaServed": "PK"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Card Rummy",
+        "operatingSystem": "Android 5.0+",
+        "applicationCategory": "GameApplication",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "ratingCount": "500000"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "PKR"
+        },
+        "downloadUrl": "https://cardrummyapp.com.pk/download-card-rummy",
+        "softwareVersion": "V1.225",
+        "fileSize": "49MB",
+        "description": "Play Teen Patti, Rummy, Dragon Tiger and other card games. Earn real money with JazzCash & EasyPaisa withdrawals.",
+        "screenshot": [
+          "https://cardrummyapp.com.pk/card-rummy-screenshot1.webp",
+          "https://cardrummyapp.com.pk/card-rummy-screenshot2.webp",
+          "https://cardrummyapp.com.pk/card-rummy-screenshot3.webp"
+        ],
+        "author": {
+          "@type": "Organization",
+          "name": "Card Rummy"
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      {/* Schema.org JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      
       {/* Hero Section with improved spacing */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="md:flex md:items-start md:justify-between md:space-x-12 lg:space-x-20">

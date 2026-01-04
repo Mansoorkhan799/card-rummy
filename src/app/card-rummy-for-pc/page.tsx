@@ -38,8 +38,51 @@ export const metadata: Metadata = {
 };
 
 export default function CardRummyForPCPage() {
+  // Schema.org structured data for PC version page
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Card Rummy for PC Download Latest Version Free 2026",
+    "description": "Complete guide to download and play Card Rummy on PC using Android emulator. Learn about system requirements, best emulators, and features.",
+    "image": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+    "author": {
+      "@type": "Organization",
+      "name": "Card Rummy",
+      "url": "https://cardrummyapp.com.pk"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Card Rummy",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp"
+      }
+    },
+    "datePublished": "2026-01-03",
+    "dateModified": "2026-01-03",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://cardrummyapp.com.pk/card-rummy-for-pc"
+    },
+    "about": {
+      "@type": "SoftwareApplication",
+      "name": "Card Rummy",
+      "operatingSystem": "Windows 7 or higher",
+      "applicationCategory": "GameApplication"
+    },
+    "articleSection": "Gaming",
+    "keywords": "Card Rummy for PC, Card Rummy PC download, BlueStacks, Android Emulator, Teen Patti PC",
+    "inLanguage": "en-US"
+  };
+
   return (
     <>
+      {/* Schema.org JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
