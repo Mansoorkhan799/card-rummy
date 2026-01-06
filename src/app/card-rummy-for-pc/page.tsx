@@ -95,7 +95,7 @@ export default function CardRummyForPCPage() {
             Free 2026
           </h2>
           <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
-            The <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> app is a popular platform where you can enjoy playing card games anytime. The games offer a wide range of games like Classic Teen Patti, Andar Bahar, Dragon Tiger, Rummy, poker, and other mini games you can play to earn real cash. The game also provides daily bonuses to boost your balance.
+            The <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> app is a popular platform where you can enjoy playing card games anytime. <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">Download Card Rummy</Link> to get started on mobile, or follow this guide to play on PC. The games offer a wide range of games like Classic Teen Patti, Andar Bahar, Dragon Tiger, Rummy, poker, and other mini games you can play to earn real cash. The game also provides daily bonuses to boost your balance.
           </p>
         </div>
 

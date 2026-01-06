@@ -74,7 +74,7 @@ export default function AboutPage() {
               <div className="md:w-2/3">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                    Welcome to <a href="https://www.cardrummyapp.com.pk/" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">www.cardrummyapp.com.pk</a>, a trusted platform to provide the latest information about 3patti <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link>. This is one of the most popular online casino games in Pakistan, having <span className="font-bold text-accent">500K+ users</span>.
+                    Welcome to <a href="https://www.cardrummyapp.com.pk/" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">www.cardrummyapp.com.pk</a>, a trusted platform to provide the latest information about 3patti <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link>. This is one of the most popular online casino games in Pakistan, having <span className="font-bold text-accent">500K+ users</span>. <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">Download Card Rummy</Link> now to join thousands of players earning real cash rewards.
                   </p>
                   <p className="text-lg text-gray-300 leading-relaxed">
                     Hundreds of people are playing these wonderful games and earning a handsome amount on a daily or weekly basis.

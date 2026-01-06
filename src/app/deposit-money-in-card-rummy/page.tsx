@@ -53,7 +53,7 @@ export default function DepositMoneyPage() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> is an exciting online game where users can play many amazing games daily. You need to deposit money to enjoy it without any problems. Adding funds to the Card Rummy Game is very easy, as it offers quick and safe payment methods, including JazzCash and Easy Paisa.
+                <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> is an exciting online game where users can play many amazing games daily. If you haven't already, <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">download Card Rummy</Link> to get started. You need to deposit money to enjoy it without any problems. Adding funds to the Card Rummy Game is very easy, as it offers quick and safe payment methods, including JazzCash and Easy Paisa.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
                 Card Rummy offers a simple deposit method that all new players can use without any confusion. It takes only a few minutes, and your money will be added immediately. Once you've earned money through gameplay, you can easily <Link href="/withdraw-money-from-card-rummy" className="text-accent hover:underline font-semibold">withdraw money from Card Rummy</Link> using the same secure payment methods.

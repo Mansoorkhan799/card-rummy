@@ -138,7 +138,7 @@ export default function Home() {
             </div>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> is an exciting online card game where you can enjoy a wide collection of casino games with its attractive design, fun background music, and engaging look. Click on the following download button to get this wonderful app.
+              <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> is an exciting online card game where you can enjoy a wide collection of casino games with its attractive design, fun background music, and engaging look. <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">Download Card Rummy</Link> now to get this wonderful app and start playing.
             </p>
 
             {/* Download Button */}
@@ -335,7 +335,7 @@ export default function Home() {
           <div className="space-y-4">
             <p className="text-gray-300 leading-relaxed">To start the CardRummy game, follow the given steps:</p>
             <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-              <li>Firstly, open the official website of 3 Patti Card Rummy and download the APK file to your device.</li>
+              <li>Firstly, open the official website of 3 Patti Card Rummy and <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">download the APK file</Link> to your device.</li>
               <li>Once downloaded then click on the downloaded APK file to start the installation by allowing the Unknown Sources.</li>
               <li>Once installation is complete, click on it to open the 3 Patti Card Rummy app.</li>
               <li>When the app opens then log in with your mobile number or just play as a guest.</li>

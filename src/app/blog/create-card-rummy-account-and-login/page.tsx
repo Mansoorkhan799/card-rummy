@@ -62,7 +62,7 @@ export default function CreateAccountLogin() {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold mb-3 text-white">Download the Card Rummy App</h3>
-                      <p className="text-gray-300 leading-relaxed">First, download the Card Rummy app from our official website. Once downloaded, install the app on your Android device.</p>
+                      <p className="text-gray-300 leading-relaxed">First, <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">download the Card Rummy app</Link> from our official website. Once downloaded, install the app on your Android device.</p>
                     </div>
                   </div>
                   
