@@ -56,14 +56,18 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon' },
-      { url: '/card-rummy.webp', type: 'image/webp' }
+      { url: 'https://cardrummyapp.com.pk/favicon.ico', type: 'image/x-icon', sizes: 'any' },
+      { url: 'https://cardrummyapp.com.pk/card-rummy.webp', type: 'image/webp', sizes: '512x512' },
+      { url: 'https://cardrummyapp.com.pk/card-rummy-logo.webp', type: 'image/webp', sizes: '192x192' }
     ],
     apple: [
-      { url: '/card-rummy.webp' }
+      { url: 'https://cardrummyapp.com.pk/card-rummy.webp', sizes: '180x180' }
+    ],
+    shortcut: [
+      { url: 'https://cardrummyapp.com.pk/favicon.ico', type: 'image/x-icon' }
     ]
   },
-  manifest: '/manifest.json',
+  manifest: 'https://cardrummyapp.com.pk/manifest.json',
   verification: {
     google: "8a7c21f6e90a89ef",
   },
@@ -119,14 +123,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="https://cardrummyapp.com.pk/manifest.json" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="any" />
-        <link rel="apple-touch-icon" href="/card-rummy.webp" />
-        <meta property="og:image" content="/card-rummy-logo.webp" />
+        <link rel="icon" href="https://cardrummyapp.com.pk/favicon.ico" type="image/x-icon" sizes="any" />
+        <link rel="shortcut icon" href="https://cardrummyapp.com.pk/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="https://cardrummyapp.com.pk/card-rummy.webp" type="image/webp" sizes="512x512" />
+        <link rel="icon" href="https://cardrummyapp.com.pk/card-rummy-logo.webp" type="image/webp" sizes="192x192" />
+        <link rel="apple-touch-icon" href="https://cardrummyapp.com.pk/card-rummy.webp" sizes="180x180" />
+        <meta property="og:image" content="https://cardrummyapp.com.pk/card-rummy-logo.webp" />
         
         {/* Google Analytics */}
         <Script

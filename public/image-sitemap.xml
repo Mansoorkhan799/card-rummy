@@ -4,6 +4,11 @@
   <url>
     <loc>https://cardrummyapp.com.pk/</loc>
     <image:image>
+      <image:loc>https://cardrummyapp.com.pk/favicon.ico</image:loc>
+      <image:title>Card Rummy Favicon</image:title>
+      <image:caption>Card Rummy site icon and favicon</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://cardrummyapp.com.pk/card-rummy.webp</image:loc>
       <image:title>Card Rummy Logo</image:title>
       <image:caption>Card Rummy - Pakistan's Premier Card Gaming Platform</image:caption>
