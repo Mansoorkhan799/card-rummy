@@ -1,6 +1,15 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
-export function middleware() {
+export function middleware(request: NextRequest) {
+  const url = request.nextUrl.clone();
+  const hostname = request.headers.get('host') || '';
+
+  // Redirect www to non-www (308 Permanent Redirect)
+  if (hostname.startsWith('www.')) {
+    url.hostname = hostname.replace('www.', '');
+    return NextResponse.redirect(url, 308);
+  }
+
   const response = NextResponse.next();
 
   // Add security headers
