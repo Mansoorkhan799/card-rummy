@@ -186,7 +186,7 @@ export default function Home() {
             </div>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              <strong className="text-white font-semibold">Card Rummy</strong> is Pakistan's premier online card game platform where you can play Teen Patti, Rummy, Dragon vs Tiger, and many other exciting casino games. <strong className="text-white font-semibold">Card Rummy</strong> offers the best card gaming experience with attractive graphics, smooth gameplay, and real cash rewards. Whether you're searching for "Card Rummy", "Card Rummy game", "Card Rummy download", or "Card Rummy app", you've found the ultimate platform. <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">Download Card Rummy APK</Link> now to start playing and winning real money with fast withdrawals via JazzCash and EasyPaisa.
+              <Link href="/" className="text-accent hover:underline">Card Rummy</Link> is Pakistan's premier online card game platform where you can play Teen Patti, Rummy, Dragon vs Tiger, and many other exciting casino games. Card Rummy offers the best card gaming experience with attractive graphics, smooth gameplay, and real cash rewards. <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">Download Card Rummy APK</Link> now to start playing and winning real money with fast withdrawals via JazzCash and EasyPaisa.
             </p>
 
             {/* Download Button */}
@@ -250,7 +250,6 @@ export default function Home() {
                 fetchPriority="high"
                 quality={90}
                 sizes="320px"
-                style={{ width: '100%', height: '100%' }}
               />
             </div>
           </div>
@@ -268,7 +267,6 @@ export default function Home() {
                 fetchPriority="high"
                 quality={90}
                 sizes="280px"
-                style={{ width: '100%', height: '100%' }}
               />
             </div>
           </div>
@@ -350,11 +348,11 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">What is Card Rummy?</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">Card Rummy</strong> is Pakistan's most popular online card game platform that combines classic card games like Teen Patti and Rummy with modern gaming technology. When people search for "Card Rummy", they're looking for a trusted platform to play card games and earn real money. <strong className="text-white">Card Rummy</strong> delivers exactly that - a safe, secure, and exciting gaming experience where you can play different card games to earn money. It has become the go-to platform for card game enthusiasts in Pakistan who want to enjoy beautiful design, simple settings, classic themes, and easy gameplay options.
+              Card Rummy is Pakistan's most popular online card game platform that combines classic card games like Teen Patti and Rummy with modern gaming technology. When people search for "Card Rummy", they're looking for a trusted platform to play card games and earn real money. Card Rummy delivers exactly that - a safe, secure, and exciting gaming experience where you can play different card games to earn money. It has become the go-to platform for card game enthusiasts in Pakistan who want to enjoy beautiful design, simple settings, classic themes, and easy gameplay options.
             </p>
 
             <p className="text-gray-300 leading-relaxed">
-              The <strong className="text-white">Card Rummy</strong> platform allows you to withdraw your winnings or deposit money anytime using local payment methods like JazzCash and EasyPaisa. When you complete your deposit, you receive a deposit bonus as well. With its attractive visuals, user-friendly design, and exciting offers, <strong className="text-white">Card Rummy</strong> stands out as one of the most enjoyable and engaging casino-style card games available in Pakistan today.
+              The Card Rummy platform allows you to withdraw your winnings or deposit money anytime using local payment methods like JazzCash and EasyPaisa. When you complete your deposit, you receive a deposit bonus as well. With its attractive visuals, user-friendly design, and exciting offers, Card Rummy stands out as one of the most enjoyable and engaging casino-style card games available in Pakistan today.
             </p>
           </div>
         </div>
@@ -1046,7 +1044,7 @@ export default function Home() {
               </span>
             </summary>
             <div className="p-4 pt-0 text-gray-300">
-              <strong className="text-white">Card Rummy</strong> is Pakistan's premier online card game platform where you can play Teen Patti, Rummy, Dragon vs Tiger, and many other exciting casino games. You can play <strong className="text-white">Card Rummy</strong> without depositing money by using free bonuses like the Welcome Bonus and Referral Commission. <strong className="text-white">Card Rummy</strong> offers real cash rewards with fast withdrawals via JazzCash and EasyPaisa.
+              Card Rummy is Pakistan's premier online card game platform where you can play Teen Patti, Rummy, Dragon vs Tiger, and many other exciting casino games. You can play Card Rummy without depositing money by using free bonuses like the Welcome Bonus and Referral Commission. Card Rummy offers real cash rewards with fast withdrawals via JazzCash and EasyPaisa.
             </div>
           </details>
 
@@ -1060,7 +1058,7 @@ export default function Home() {
               </span>
             </summary>
             <div className="p-4 pt-0 text-gray-300">
-              To download <strong className="text-white">Card Rummy</strong> APK, visit cardrummyapp.com.pk and click the download button. The <strong className="text-white">Card Rummy</strong> APK file will be saved to your device. Enable "Install from Unknown Sources" in your Android settings, then open the downloaded file to install <strong className="text-white">Card Rummy</strong>.
+              To download Card Rummy APK, visit cardrummyapp.com.pk and click the download button. The Card Rummy APK file will be saved to your device. Enable "Install from Unknown Sources" in your Android settings, then open the downloaded file to install Card Rummy.
             </div>
           </details>
 
@@ -1074,7 +1072,7 @@ export default function Home() {
               </span>
             </summary>
             <div className="p-4 pt-0 text-gray-300">
-              <strong className="text-white">Card Rummy</strong> stands out with its simple design, fast transactions via JazzCash and EasyPaisa, exciting games like Teen Patti and Rummy, daily bonuses, and secure platform. <strong className="text-white">Card Rummy</strong> offers the best card gaming experience in Pakistan with real cash rewards.
+              Card Rummy stands out with its simple design, fast transactions via JazzCash and EasyPaisa, exciting games like Teen Patti and Rummy, daily bonuses, and secure platform. Card Rummy offers the best card gaming experience in Pakistan with real cash rewards.
             </div>
           </details>
 
@@ -1088,7 +1086,7 @@ export default function Home() {
               </span>
             </summary>
             <div className="p-4 pt-0 text-gray-300">
-              Yes, <strong className="text-white">Card Rummy</strong> is safe to use with secure data encryption and privacy protection. <strong className="text-white">Card Rummy</strong> ensures your personal information and transactions are protected. However, the legality of online gaming depends on your local laws, so always check your region's regulations before playing <strong className="text-white">Card Rummy</strong>.
+              Yes, Card Rummy is safe to use with secure data encryption and privacy protection. Card Rummy ensures your personal information and transactions are protected. However, the legality of online gaming depends on your local laws, so always check your region's regulations before playing Card Rummy.
             </div>
           </details>
 

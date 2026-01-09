@@ -104,9 +104,6 @@ const nextConfig = {
     optimizeCss: true,
     scrollRestoration: true,
   },
-
-  // Optimize output - remove unnecessary code
-  swcMinify: true,
   
   // Modern module/nomodule pattern
   modularizeImports: {
