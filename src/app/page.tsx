@@ -105,6 +105,8 @@ export default function Home() {
         "name": "Card Rummy",
         "operatingSystem": "Android 5.0+",
         "applicationCategory": "GameApplication",
+        "image": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+        "logo": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.5",
@@ -120,9 +122,11 @@ export default function Home() {
         "fileSize": "49MB",
         "description": "Play Teen Patti, Rummy, Dragon Tiger and other card games. Earn real money with JazzCash & EasyPaisa withdrawals.",
         "screenshot": [
-          "https://cardrummyapp.com.pk/card-rummy-screenshot1.webp",
-          "https://cardrummyapp.com.pk/card-rummy-screenshot2.webp",
-          "https://cardrummyapp.com.pk/card-rummy-screenshot3.webp"
+          "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+          "https://cardrummyapp.com.pk/card-rummy.webp",
+          "https://cardrummyapp.com.pk/card-rummy-game-interface.webp",
+          "https://cardrummyapp.com.pk/card-rummy-games.webp",
+          "https://cardrummyapp.com.pk/card-rummy-earn-bonus.webp"
         ],
         "author": {
           "@type": "Organization",
