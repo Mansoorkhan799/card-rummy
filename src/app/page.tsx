@@ -436,7 +436,7 @@ export default function Home() {
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl">
                 <Image
-                  src="/Card-rummy-bonuses.webp"
+                  src="/card-rummy-bonuses.webp"
                   alt="Card Rummy Bonuses & Rewards"
                   width={400}
                   height={711}
