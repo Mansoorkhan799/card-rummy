@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     default: "Card Rummy - Download APK | Play & Earn Real Money",
     template: "%s | Card Rummy"
   },
-  description: "Card Rummy - Pakistan's #1 card game platform. Download Card Rummy APK, play Teen Patti, Rummy, Dragon vs Tiger & win real cash. Fast withdrawals via JazzCash & EasyPaisa. Join 500K+ players!",
+  description: "Card Rummy 2026 - Pakistan's #1 card game platform. Download Card Rummy APK, play Teen Patti, Rummy, Dragon vs Tiger & win real cash. Fast withdrawals via JazzCash & EasyPaisa. Join 500K+ players!",
   keywords: [
     "Card Rummy",
     "3 Patti Card Rummy",
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Card Rummy - Download APK | Play & Earn Real Money",
-    description: "Card Rummy - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
+    description: "Card Rummy 2026 - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
     url: "https://cardrummyapp.com.pk",
     siteName: "Card Rummy",
     locale: "en_US",
@@ -99,7 +99,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Card Rummy - Download APK | Play & Earn Real Money",
-    description: "Card Rummy - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
+    description: "Card Rummy 2026 - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
     creator: "@cardrummy",
     images: [
       {
