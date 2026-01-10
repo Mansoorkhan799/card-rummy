@@ -404,7 +404,7 @@ export default function Home() {
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl">
                 <Image
-                  src="/card-rummy-game.webp"
+                  src="/card-rummy-game-interface.webp"
                   alt="Card Rummy Game Interface"
                   width={400}
                   height={711}
@@ -436,7 +436,7 @@ export default function Home() {
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl">
                 <Image
-                  src="/card-rummy-bonuses.webp"
+                  src="/card-rummy-earn-bonus.webp"
                   alt="Card Rummy Bonuses & Rewards"
                   width={400}
                   height={711}
@@ -480,12 +480,12 @@ export default function Home() {
               <p className="text-center text-gray-300 mt-3 font-medium">Withdraw Money</p>
             </div>
 
-            {/* VIP Program */}
+            {/* Refer and Earn */}
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl">
                 <Image
-                  src="/card-rummy-vip-program.webp"
-                  alt="Card Rummy VIP Program"
+                  src="/card-rummy-refer-and-earn.webp"
+                  alt="Card Rummy Refer and Earn"
                   width={400}
                   height={711}
                   className="w-full h-auto"
@@ -493,7 +493,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
-              <p className="text-center text-gray-300 mt-3 font-medium">VIP Program</p>
+              <p className="text-center text-gray-300 mt-3 font-medium">Refer & Earn</p>
             </div>
           </div>
 
@@ -503,7 +503,7 @@ export default function Home() {
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl">
               <Image
-                  src="/card-rummy-recharge-debate.webp"
+                  src="/card-rummy-recharge-rebate.webp"
                   alt="Card Rummy Recharge Rebate"
                   width={400}
                   height={711}
