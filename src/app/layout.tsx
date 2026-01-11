@@ -151,10 +151,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         
-        {/* Preload critical resources */}
-        <link rel="preload" href="/card-rummy-logo.webp" as="image" type="image/webp" />
-        <link rel="preload" href="/card-rummy.webp" as="image" type="image/webp" />
-        
         {/* Google Analytics - Load after page is interactive to reduce impact on LCP */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
