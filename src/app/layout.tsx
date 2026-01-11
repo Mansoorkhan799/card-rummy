@@ -150,14 +150,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         
-        {/* Preload critical resources */}
-        <link rel="preload" href="/card-rummy-logo.webp" as="image" type="image/webp" />
-        <link rel="preload" href="/card-rummy.webp" as="image" type="image/webp" />
-        
-        {/* Google Analytics - Load after page is interactive to reduce impact on LCP */}
+        {/* Google Analytics - Load after page is fully loaded to reduce impact */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
           strategy="lazyOnload"
+          defer
         />
         <Script id="google-analytics" strategy="lazyOnload">
           {`
@@ -167,7 +164,8 @@ export default function RootLayout({
             gtag('config', 'G-XXXXXXXXXX', {
               page_path: window.location.pathname,
               send_page_view: false,
-              transport_type: 'beacon'
+              transport_type: 'beacon',
+              page_title: document.title
             });
           `}
         </Script>
