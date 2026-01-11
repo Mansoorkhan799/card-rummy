@@ -24,6 +24,36 @@ img {
   height: auto;
 }
 
+/* Prevent layout shift for footer */
+footer {
+  contain: layout style paint;
+  will-change: auto;
+}
+
+/* Optimize font loading to prevent layout shift */
+body {
+  font-display: swap;
+}
+
+/* Prevent layout shift for all images */
+img, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optimize rendering performance */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent layout shift for footer */
+footer {
+  min-height: 300px;
+  contain: layout style paint;
+}
+
 .download-btn {
   position: relative;
   overflow: hidden;
