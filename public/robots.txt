@@ -131,4 +131,4 @@ Sitemap: https://cardrummyapp.com.pk/image-sitemap.xml
 # ============================================
 # The Host directive is DEPRECATED and IGNORED by Googlebot.
 # Adding it will cause warnings in Google Search Console.
-# Use canonical URLs and redirects instead (handled in middleware).
+# Use canonical URLs and redirects instead (handled at hosting level).

@@ -75,7 +75,8 @@ export default function CardRummyRealOrFakePage() {
   };
 
   return (
-    <article className="py-12 px-4 md:px-8 max-w-4xl mx-auto">
+    <main className="min-h-screen bg-[#060A20]">
+      <article className="py-12 px-4 md:px-8 max-w-4xl mx-auto">
       {/* Schema.org JSON-LD */}
       <script
         type="application/ld+json"
@@ -394,6 +395,7 @@ export default function CardRummyRealOrFakePage() {
         </div>
       </div>
     </article>
+    </main>
   );
 }
 

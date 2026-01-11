@@ -5,6 +5,7 @@ export async function GET() {
   
   // Note: This API route serves as fallback. The static /public/robots.txt takes precedence.
   // The static file is more comprehensive and includes AI bot restrictions.
+  // Redirects are handled at hosting/Vercel level, not in middleware.
   const robotsTxt = `# robots.txt for cardrummyapp.com.pk
 
 # Allow search engines, but prevent AI training
