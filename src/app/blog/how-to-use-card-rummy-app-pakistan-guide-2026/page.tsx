@@ -216,7 +216,7 @@ export default function BlogHowToUseCardRummyGuide() {
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li>Each player gets 3 cards</li>
             <li>Players bet on who has the best hand</li>
-            <li>Hand rankings: Trail (three of a kind) > Pure Sequence > Sequence > Color > Pair > High Card</li>
+            <li>Hand rankings: Trail (three of a kind) &gt; Pure Sequence &gt; Sequence &gt; Color &gt; Pair &gt; High Card</li>
             <li>Choose to play "Seen" (see your cards) or "Blind" (don't see, but bets cost less)</li>
             <li>Typical round: 2-5 minutes</li>
             <li>Entry: ₨10 to ₨10,000+ tables available</li>
