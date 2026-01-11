@@ -4,6 +4,12 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const hostname = request.headers.get('host') || '';
 
+  // Redirect HTTP to HTTPS (308 Permanent Redirect)
+  if (request.nextUrl.protocol === 'http:') {
+    url.protocol = 'https:';
+    return NextResponse.redirect(url, 308);
+  }
+
   // Redirect www to non-www (308 Permanent Redirect)
   if (hostname.startsWith('www.')) {
     url.hostname = hostname.replace('www.', '');
