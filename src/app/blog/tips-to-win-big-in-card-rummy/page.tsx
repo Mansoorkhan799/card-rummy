@@ -270,7 +270,7 @@ export default function TipsToWinBig() {
                 <p className="text-white text-lg mb-8 max-w-2xl mx-auto">Apply these expert tips and strategies to maximize your winnings in Card Rummy. Download the app now and start playing smarter!</p>
                 
                 <Link 
-                  href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
+                  href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-accent font-bold py-4 px-8 rounded-full hover:bg-[#0A1029] transition-all shadow-2xl hover:shadow-3xl transform hover:scale-105"

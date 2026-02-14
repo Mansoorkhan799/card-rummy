@@ -237,7 +237,7 @@ export default function CardRummyForPCPage() {
           {/* Download Button */}
           <div className="flex justify-center mt-10">
             <a 
-              href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
+              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
@@ -452,7 +452,7 @@ export default function CardRummyForPCPage() {
             Download Card Rummy and install it using your favorite emulator!
           </p>
           <a 
-            href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
+            href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-[#0ea5e9] hover:bg-gray-100 font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
