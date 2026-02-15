@@ -36,7 +36,7 @@ export default function WithdrawMoneyPage() {
               Fast, Secure & Easy Cash Out with JazzCash, EasyPaisa & Bank Transfer
             </p>
             <Link
-              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
+              href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-accent text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/90 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"
@@ -323,7 +323,7 @@ export default function WithdrawMoneyPage() {
               Download Card Rummy now and start withdrawing your earnings securely!
             </p>
             <Link
-              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
+              href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-accent text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/90 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"

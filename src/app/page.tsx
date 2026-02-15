@@ -260,7 +260,7 @@ export default function Home() {
             {/* Download Button */}
             <div className="flex justify-center my-8">
               <a 
-                href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
+                href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group"
@@ -883,7 +883,7 @@ export default function Home() {
 
         <div className="flex justify-center">
           <a 
-            href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
+            href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
             target="_blank"
             rel="noopener noreferrer"
             className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-4 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
