@@ -27,7 +27,6 @@ img {
 /* Prevent layout shift for footer */
 footer {
   contain: layout style paint;
-  min-height: 400px;
   height: auto;
 }
 

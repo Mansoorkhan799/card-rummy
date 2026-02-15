@@ -1104,8 +1104,8 @@ export default function Home() {
         <div className="bg-secondary rounded-xl p-8">
         <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Frequently Asked Questions</h2>
         <div className="space-y-4">
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
+          <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
+            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors">
               What is Card Rummy and how does it work?
               <span className="transition group-open:rotate-180">
                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
@@ -1113,13 +1113,13 @@ export default function Home() {
                 </svg>
               </span>
             </summary>
-            <div className="p-4 pt-0 text-gray-300">
+            <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
               Card Rummy is Pakistan's premier online card game platform where you can play Teen Patti, Rummy, Dragon vs Tiger, and many other exciting casino games. You can play Card Rummy without depositing money by using free bonuses like the Welcome Bonus and Referral Commission. Card Rummy offers real cash rewards with fast withdrawals via JazzCash and EasyPaisa.
             </div>
           </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
+          <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
+            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors">
               How to download Card Rummy APK?
               <span className="transition group-open:rotate-180">
                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
@@ -1127,13 +1127,13 @@ export default function Home() {
                 </svg>
               </span>
             </summary>
-            <div className="p-4 pt-0 text-gray-300">
+            <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
               To download Card Rummy APK, visit cardrummyapp.com.pk and click the download button. The Card Rummy APK file will be saved to your device. Enable "Install from Unknown Sources" in your Android settings, then open the downloaded file to install Card Rummy.
             </div>
           </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
+          <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
+            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors">
               What makes Card Rummy different from other card games?
               <span className="transition group-open:rotate-180">
                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
@@ -1141,13 +1141,13 @@ export default function Home() {
                 </svg>
               </span>
             </summary>
-            <div className="p-4 pt-0 text-gray-300">
+            <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
               Card Rummy stands out with its simple design, fast transactions via JazzCash and EasyPaisa, exciting games like Teen Patti and Rummy, daily bonuses, and secure platform. Card Rummy offers the best card gaming experience in Pakistan with real cash rewards.
             </div>
           </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
+          <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
+            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors">
               Is Card Rummy safe and legal to use?
               <span className="transition group-open:rotate-180">
                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
@@ -1155,13 +1155,13 @@ export default function Home() {
                 </svg>
               </span>
             </summary>
-            <div className="p-4 pt-0 text-gray-300">
+            <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
               Yes, Card Rummy is safe to use with secure data encryption and privacy protection. Card Rummy ensures your personal information and transactions are protected. However, the legality of online gaming depends on your local laws, so always check your region's regulations before playing Card Rummy.
             </div>
           </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
+          <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
+            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors">
               Can users lose money while playing?
               <span className="transition group-open:rotate-180">
                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
@@ -1169,13 +1169,13 @@ export default function Home() {
                 </svg>
               </span>
             </summary>
-            <div className="p-4 pt-0 text-gray-300">
+            <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
               Yes, this app is involved with real money, so you might lose some amount if you do not play the games carefully. So, always play wisely and set a limit while playing.
             </div>
           </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
+          <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
+            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors">
               Is it possible to change the language of Card Rummy?
               <span className="transition group-open:rotate-180">
                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
@@ -1183,13 +1183,13 @@ export default function Home() {
                 </svg>
               </span>
             </summary>
-            <div className="p-4 pt-0 text-gray-300">
+            <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
               Yes, it is possible because this app supports multiple languages, so you can change the language from the settings menu easily.
             </div>
           </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
+          <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
+            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors">
               How do referral rewards work?
               <span className="transition group-open:rotate-180">
                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
@@ -1197,13 +1197,13 @@ export default function Home() {
                 </svg>
               </span>
             </summary>
-            <div className="p-4 pt-0 text-gray-300">
+            <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
               When you share your referral link with others, or when someone joins this app through your link, you can receive a commission.
             </div>
           </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
+          <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
+            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors">
               Is Card Rummy available on iPhone (iOS)?
               <span className="transition group-open:rotate-180">
                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
@@ -1211,7 +1211,7 @@ export default function Home() {
                 </svg>
               </span>
             </summary>
-            <div className="p-4 pt-0 text-gray-300">
+            <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
               This app is mainly available for Android devices, but you can also check the official website or store for updates about iOS availability.
             </div>
           </details>
@@ -1220,7 +1220,7 @@ export default function Home() {
       </section>
 
       {/* Conclusion */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section className="pt-12 pb-4 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Final Thoughts</h2>
           <div className="space-y-4">

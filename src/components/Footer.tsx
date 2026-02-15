@@ -6,7 +6,7 @@ export default function Footer() {
   // Fixed directly in the JSX to avoid unused variable warnings
   
   return (
-    <footer className="bg-primary text-white py-8 px-4 md:px-8 border-t border-gray-800 relative z-20" style={{ minHeight: '400px' }}>
+    <footer className="bg-primary text-white pt-8 pb-2 px-4 md:px-8 border-t border-gray-800 relative z-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Column */}
@@ -120,8 +120,8 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-400">
-          <p>© 2026 Card Rummy. All rights reserved. | <Link href="/" className="hover:text-accent">cardrummyapp.com.pk</Link></p>
+        <div className="border-t border-gray-800 mt-8 pt-4 pb-3 text-center text-sm text-gray-400">
+          <p className="mb-0">© 2026 Card Rummy. All rights reserved. | <Link href="/" className="hover:text-accent">cardrummyapp.com.pk</Link></p>
         </div>
       </div>
     </footer>
