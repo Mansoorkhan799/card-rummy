@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://cardrummyapp.com.pk'),
   title: {
-    default: "Card Rummy - Download APK | Play & Earn Real Money",
+    default: "Card Rummy Pakistan v1.225 Free Download Official APK",
     template: "%s | Card Rummy"
   },
   description: "Card Rummy 2026 - Pakistan's #1 card game platform. Download Card Rummy APK, play Teen Patti, Rummy, Dragon vs Tiger & win real cash. Fast withdrawals via JazzCash & EasyPaisa. Join 500K+ players!",
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     canonical: "https://cardrummyapp.com.pk",
   },
   openGraph: {
-    title: "Card Rummy - Download APK | Play & Earn Real Money",
+    title: "Card Rummy Pakistan v1.225 Free Download Official APK",
     description: "Card Rummy 2026 - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
     url: "https://cardrummyapp.com.pk",
     siteName: "Card Rummy",
@@ -112,7 +112,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Card Rummy - Download APK | Play & Earn Real Money",
+    title: "Card Rummy Pakistan v1.225 Free Download Official APK",
     description: "Card Rummy 2026 - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
     creator: "@cardrummy",
     images: [
