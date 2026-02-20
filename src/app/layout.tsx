@@ -232,8 +232,8 @@ export default function RootLayout({
               },
               "aggregateRating": {
                 "@type": "AggregateRating",
-                "ratingValue": "4.7",
-                "ratingCount": "200000"
+                "ratingValue": "4.5",
+                "ratingCount": "500000"
               }
             })
           }}

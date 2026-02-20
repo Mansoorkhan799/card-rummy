@@ -45,10 +45,16 @@ export const metadata: Metadata = {
     description: 'Card Rummy 2026 - Pakistan\'s #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!',
     images: [
       {
-        url: 'https://cardrummyapp.com.pk/card-rummy-logo.webp',
+        url: 'https://cardrummyapp.com.pk/feature/og-image.webp',
         width: 1200,
         height: 630,
-        alt: 'Card Rummy APK Download'
+        alt: 'Card Rummy - Premier Card Gaming Platform'
+      },
+      {
+        url: 'https://cardrummyapp.com.pk/feature/og-image-square.webp',
+        width: 800,
+        height: 800,
+        alt: 'Card Rummy - Premier Card Gaming Platform'
       }
     ],
     type: 'website'
@@ -57,7 +63,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Card Rummy Pakistan v1.225 Free Download Official APK',
     description: 'Card Rummy 2026 - Pakistan\'s #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!',
-    images: ['https://cardrummyapp.com.pk/card-rummy-logo.webp']
+    images: ['https://cardrummyapp.com.pk/feature/og-image.webp']
   }
 };
 
@@ -1015,7 +1021,7 @@ export default function Home() {
               <li>In the latest version, the game looks better with improved graphics and smooth animations.</li>
               <li>Provide fast performance so that the app opens quickly and runs smoothly without lag.</li>
               <li>Its menu and layout are simple, which makes it very easy, especially for new users.</li>
-              <li>In the latest versions, more games are added, such as Dragon vs Tiger, Rumany, and others.</li>
+              <li>In the latest versions, more games are added, such as Dragon vs Tiger, Rummy, and others.</li>
               <li>The withdrawal or deposit options work faster and smoothly in the latest version.</li>
               <li>In the latest version, better security measures can be used that can protect your account and money.</li>
               <li>New bonuses and referral rewards provide you with more chances to earn money.</li>
