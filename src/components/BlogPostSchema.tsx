@@ -1,5 +1,9 @@
 const BASE = "https://cardrummyapp.com.pk";
 
+function safeJsonLd(obj: object): string {
+  return JSON.stringify(obj).replace(/</g, "\\u003c");
+}
+
 type BlogPostSchemaProps = {
   title: string;
   description: string;
@@ -47,17 +51,17 @@ export default function BlogPostSchema({
     inLanguage: "en-US",
   };
   return (
-    <>
+    <div suppressHydrationWarning style={{ display: "contents" }}>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumb) }}
       />
       {!breadcrumbOnly && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(article) }}
+          dangerouslySetInnerHTML={{ __html: safeJsonLd(article) }}
         />
       )}
-    </>
+    </div>
   );
 }

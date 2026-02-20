@@ -86,10 +86,14 @@ export default function CardRummyRealOrFakePage() {
       />
       <article className="py-12 px-4 md:px-8 max-w-4xl mx-auto">
       {/* Schema.org JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      <div suppressHydrationWarning style={{ display: "contents" }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaData).replace(/</g, "\\u003c"),
+          }}
+        />
+      </div>
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm">
         <Link href="/" className="text-[#0ea5e9] hover:underline">Home</Link>
