@@ -145,9 +145,6 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/card-rummy-logo.webp" sizes="180x180" />
         <meta property="og:image" content="https://cardrummyapp.com.pk/card-rummy-logo.webp" />
         
-        {/* Preload LCP image (hero) for faster Largest Contentful Paint */}
-        <link rel="preload" href="/card-rummy.webp" as="image" type="image/webp" />
-        
         {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
