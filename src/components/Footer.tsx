@@ -1,10 +1,6 @@
-'use client';
-
 import Link from 'next/link';
 
 export default function Footer() {
-  // Fixed directly in the JSX to avoid unused variable warnings
-  
   return (
     <footer className="bg-primary text-white pt-8 pb-2 px-4 md:px-8 border-t border-gray-800 relative z-20">
       <div className="container mx-auto">

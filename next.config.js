@@ -136,7 +136,8 @@ const nextConfig = {
 
   // Enable experimental features
   experimental: {
-    optimizeCss: true,
+    optimizeCss: true, // Critters inlines critical CSS
+    inlineCss: true, // Inline CSS in HTML to eliminate render-blocking (improves FCP/LCP)
     scrollRestoration: true,
     optimizePackageImports: ['react-icons'],
   },
