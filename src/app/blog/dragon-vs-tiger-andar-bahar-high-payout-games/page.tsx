@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
   title: 'Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Card Rummy App 2026',
@@ -26,6 +27,12 @@ export const metadata: Metadata = {
 export default function BlogHighPayoutGames() {
   return (
     <main className="min-h-screen bg-[#060A20]">
+      <BlogPostSchema
+        title="Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Card Rummy App 2026"
+        description="Discover the best high-payout games in Card Rummy: Dragon vs Tiger, Andar Bahar, Teen Patti & Rummy. Learn which games offer highest win rates & fastest earnings in Pakistan 2026!"
+        slug="dragon-vs-tiger-andar-bahar-high-payout-games"
+        datePublished="2026-01-11"
+      />
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         <nav className="mb-8 text-sm text-gray-400">
           <Link href="/" className="hover:text-[#FFA500]">Home</Link>

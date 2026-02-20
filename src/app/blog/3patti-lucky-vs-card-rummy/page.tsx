@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
   title: '3Patti Lucky vs Card Rummy: Which Game Is Better for Earning Real Cash? 2026',
@@ -26,6 +27,12 @@ export const metadata: Metadata = {
 export default function Blog3PattiLuckyVsCardRummy() {
   return (
     <main className="min-h-screen bg-[#060A20]">
+      <BlogPostSchema
+        title="3Patti Lucky vs Card Rummy: Which Game Is Better for Earning Real Cash? 2026"
+        description="Detailed comparison: 3Patti Lucky vs Card Rummy. Games, bonuses, payout speed & earning analysis. Find the best real money app for Pakistan players in 2026!"
+        slug="3patti-lucky-vs-card-rummy"
+        datePublished="2026-01-11"
+      />
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         <nav className="mb-8 text-sm text-gray-400">
           <Link href="/" className="hover:text-[#FFA500]">Home</Link>

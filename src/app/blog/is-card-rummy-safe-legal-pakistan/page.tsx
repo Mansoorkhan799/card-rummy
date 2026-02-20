@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
   title: 'Is Card Rummy Safe and Legal in Pakistan? Risks, Rules, and Safe Play Tips 2026',
@@ -26,6 +27,12 @@ export const metadata: Metadata = {
 export default function BlogIsCardRummySafeLegal() {
   return (
     <main className="min-h-screen bg-[#060A20]">
+      <BlogPostSchema
+        title="Is Card Rummy Safe and Legal in Pakistan? Risks, Rules, and Safe Play Tips 2026"
+        description="Is Card Rummy legal in Pakistan? Complete safety guide 2026: Legal status, risks, security measures, withdrawal safety, and tips for safe play. Know before you play!"
+        slug="is-card-rummy-safe-legal-pakistan"
+        datePublished="2026-01-11"
+      />
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         <nav className="mb-8 text-sm text-gray-400">
           <Link href="/" className="hover:text-[#FFA500]">Home</Link>

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
+import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
   title: 'Tips to Win Big in Card Rummy - Expert Strategies & Tricks 2026',
@@ -31,6 +32,12 @@ export const metadata: Metadata = {
 export default function TipsToWinBig() {
   return (
     <>
+      <BlogPostSchema
+        title="Tips to Win Big in Card Rummy - Expert Strategies & Tricks 2026"
+        description="Discover expert strategies and proven tips to maximize your winnings in Card Rummy. Learn how to win big in Teen Patti, Rummy, and other card games."
+        slug="tips-to-win-big-in-card-rummy"
+        datePublished="2026-01-20"
+      />
       <div className="min-h-screen bg-[#060A20]">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">

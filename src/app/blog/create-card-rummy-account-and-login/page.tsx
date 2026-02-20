@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
+import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
   title: 'How to Create a Card Rummy Account and Login? - Step by Step Guide',
@@ -31,6 +32,12 @@ export const metadata: Metadata = {
 export default function CreateAccountLogin() {
   return (
     <>
+      <BlogPostSchema
+        title="How to Create a Card Rummy Account and Login? - Step by Step Guide"
+        description="Learn how to create your Card Rummy account and login with our step-by-step guide. Get started playing games and earning rewards in minutes."
+        slug="create-card-rummy-account-and-login"
+        datePublished="2026-01-20"
+      />
       <div className="min-h-screen bg-[#060A20]">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">

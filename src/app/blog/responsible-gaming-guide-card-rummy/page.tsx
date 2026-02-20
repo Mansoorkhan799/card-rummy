@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
   title: 'Responsible Gaming Guide: How to Enjoy Card Rummy Without Addiction or Big Losses 2026',
@@ -26,6 +27,12 @@ export const metadata: Metadata = {
 export default function BlogResponsibleGamingGuide() {
   return (
     <main className="min-h-screen bg-[#060A20]">
+      <BlogPostSchema
+        title="Responsible Gaming Guide: How to Enjoy Card Rummy Without Addiction or Big Losses 2026"
+        description="Complete responsible gaming guide for Card Rummy 2026: How to play safely, avoid addiction, set limits, recognize warning signs, and enjoy gaming without financial harm in Pakistan."
+        slug="responsible-gaming-guide-card-rummy"
+        datePublished="2026-01-11"
+      />
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         <nav className="mb-8 text-sm text-gray-400">
           <Link href="/" className="hover:text-[#FFA500]">Home</Link>

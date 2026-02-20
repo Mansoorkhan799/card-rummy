@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
   title: 'Is Card Rummy Real or Fake to Earn Money? - Complete Guide 2026',
@@ -76,6 +77,13 @@ export default function CardRummyRealOrFakePage() {
 
   return (
     <main className="min-h-screen bg-[#060A20]">
+      <BlogPostSchema
+        title="Is Card Rummy Real or Fake to Earn Money? - Complete Guide 2026"
+        description="Discover if Card Rummy app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps."
+        slug="is-card-rummy-real-or-fake"
+        datePublished="2026-01-03"
+        breadcrumbOnly
+      />
       <article className="py-12 px-4 md:px-8 max-w-4xl mx-auto">
       {/* Schema.org JSON-LD */}
       <script

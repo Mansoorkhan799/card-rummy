@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
   title: 'How to Use Card Rummy App in Pakistan: Complete Beginner\'s Guide 2026',
@@ -26,6 +27,12 @@ export const metadata: Metadata = {
 export default function BlogHowToUseCardRummyGuide() {
   return (
     <main className="min-h-screen bg-[#060A20]">
+      <BlogPostSchema
+        title="How to Use Card Rummy App in Pakistan: Complete Beginner's Guide 2026"
+        description="Complete Card Rummy app guide 2026 for Pakistan: Download, registration, deposit, withdrawal, gameplay & earning tips. Step-by-step tutorial for beginners!"
+        slug="how-to-use-card-rummy-app-pakistan-guide-2026"
+        datePublished="2026-01-11"
+      />
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         <nav className="mb-8 text-sm text-gray-400">
           <Link href="/" className="hover:text-[#FFA500]">Home</Link>
