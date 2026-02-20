@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Everything you need to know about Card Rummy safety and legal status in Pakistan. Risks, security, and safe play tips.',
     type: 'article',
   },
+  alternates: { canonical: "https://cardrummyapp.com.pk/blog/is-card-rummy-safe-legal-pakistan" },
 };
 
 export default function BlogIsCardRummySafeLegal() {

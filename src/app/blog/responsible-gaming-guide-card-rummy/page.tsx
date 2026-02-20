@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Essential guide to playing Card Rummy responsibly. Learn to set limits, recognize addiction signs, and enjoy gaming safely.',
     type: 'article',
   },
+  alternates: { canonical: "https://cardrummyapp.com.pk/blog/responsible-gaming-guide-card-rummy" },
 };
 
 export default function BlogResponsibleGamingGuide() {

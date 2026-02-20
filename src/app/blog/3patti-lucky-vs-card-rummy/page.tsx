@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Complete comparison of 3Patti Lucky and Card Rummy. Find out which app offers better bonuses, faster withdrawals, and more earning potential!',
     type: 'article',
   },
+  alternates: { canonical: "https://cardrummyapp.com.pk/blog/3patti-lucky-vs-card-rummy" },
 };
 
 export default function Blog3PattiLuckyVsCardRummy() {

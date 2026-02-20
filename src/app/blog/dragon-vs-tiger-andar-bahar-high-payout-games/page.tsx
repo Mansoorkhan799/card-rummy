@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Complete guide to highest-paying games in Card Rummy app. Learn which games offer best win rates and fastest earnings!',
     type: 'article',
   },
+  alternates: { canonical: "https://cardrummyapp.com.pk/blog/dragon-vs-tiger-andar-bahar-high-payout-games" },
 };
 
 export default function BlogHighPayoutGames() {

@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Step-by-step guide to download, register, deposit, play & earn from Card Rummy app in Pakistan. Perfect for beginners!',
     type: 'article',
   },
+  alternates: { canonical: "https://cardrummyapp.com.pk/blog/how-to-use-card-rummy-app-pakistan-guide-2026" },
 };
 
 export default function BlogHowToUseCardRummyGuide() {

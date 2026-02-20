@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Complete guide to all Card Rummy bonuses and VIP rewards. Learn how to maximize welcome bonus, recharge rebates, and VIP level benefits!',
     type: 'article',
   },
+  alternates: { canonical: "https://cardrummyapp.com.pk/blog/card-rummy-bonuses-vip-guide" },
 };
 
 export default function BlogCardRummyBonusesVIPGuide() {

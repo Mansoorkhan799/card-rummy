@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Honest, comprehensive review of Card Rummy app. Features, games, bonuses, withdrawal speed, and real user experience for 2026.',
     type: 'article',
   },
+  alternates: { canonical: "https://cardrummyapp.com.pk/blog/card-rummy-app-review-2026" },
 };
 
 export default function BlogCardRummyAppReview() {

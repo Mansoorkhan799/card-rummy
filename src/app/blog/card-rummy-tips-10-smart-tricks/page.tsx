@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Proven tips and tricks to maximize your Card Rummy earnings. Learn bankroll management, game strategies, and safe play techniques!',
     type: 'article',
   },
+  alternates: { canonical: "https://cardrummyapp.com.pk/blog/card-rummy-tips-10-smart-tricks" },
 };
 
 export default function BlogCardRummyTips() {
