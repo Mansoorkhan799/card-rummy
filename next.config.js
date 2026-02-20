@@ -122,9 +122,12 @@ const nextConfig = {
     if (!isServer) {
       config.target = ['web', 'es2022'];
       
-      // Disable polyfills for modern features
+      // Disable Next.js polyfills for modern browsers (Lighthouse: Legacy JavaScript)
+      // Saves ~11KB - polyfills for Array.at, Object.hasOwn, etc. aren't needed for Chrome 90+, Safari 14+, etc.
       config.resolve.alias = {
         ...config.resolve.alias,
+        '../build/polyfills/polyfill-module': false,
+        'next/dist/build/polyfills/polyfill-module': false,
       };
     }
 

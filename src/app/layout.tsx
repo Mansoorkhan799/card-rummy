@@ -81,7 +81,6 @@ export const metadata: Metadata = {
       { url: '/favicon.ico', type: 'image/x-icon' }
     ]
   },
-  manifest: 'https://cardrummyapp.com.pk/manifest.json',
   verification: {
     google: "8a7c21f6e90a89ef",
   },
@@ -137,7 +136,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="manifest" href="/manifest.json" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16 32x32" />
@@ -151,6 +149,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         
+        {/* Defer manifest to avoid critical path (374ms latency) - load after page interactive */}
+        <Script id="deferred-manifest" strategy="lazyOnload">
+          {`(function(){var l=document.createElement('link');l.rel='manifest';l.href='/manifest.json';document.head.appendChild(l);})();`}
+        </Script>
         {/* Google Analytics - only load if GA ID is set in env (use NEXT_PUBLIC_GA_MEASUREMENT_ID) */}
         {typeof process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID === 'string' &&
          process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID &&
