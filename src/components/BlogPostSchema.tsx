@@ -12,6 +12,8 @@ type BlogPostSchemaProps = {
   dateModified?: string;
   image?: string;
   breadcrumbOnly?: boolean;
+  /** Key summary or first 2-3 paragraphs for AI parsing and articleBody */
+  articleBody?: string;
 };
 
 export default function BlogPostSchema({
@@ -22,6 +24,7 @@ export default function BlogPostSchema({
   dateModified,
   image = `${BASE}/card-rummy-logo.webp`,
   breadcrumbOnly = false,
+  articleBody,
 }: BlogPostSchemaProps) {
   const url = `${BASE}/blog/${slug}`;
   const breadcrumb = {
@@ -33,11 +36,13 @@ export default function BlogPostSchema({
       { "@type": "ListItem", position: 3, name: title, item: url },
     ],
   };
-  const article = {
+  const article: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `${url}#article`,
     headline: title,
     description,
+    url,
     image,
     author: { "@type": "Organization", name: "Card Rummy", url: BASE },
     publisher: {
@@ -49,6 +54,7 @@ export default function BlogPostSchema({
     dateModified: dateModified || datePublished,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     inLanguage: "en-US",
+    ...(articleBody && { articleBody }),
   };
   return (
     <div suppressHydrationWarning style={{ display: "contents" }}>

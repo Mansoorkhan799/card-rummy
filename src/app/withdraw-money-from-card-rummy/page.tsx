@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function WithdrawMoneyPage() {
   return (
-    <div className="min-h-screen bg-primary">
+    <main className="min-h-screen bg-primary" itemScope itemType="https://schema.org/Article">
       {/* Hero Section */}
       <section className="relative py-12 md:py-20 bg-secondary border-b border-gray-800">
         <div className="container mx-auto px-4">
@@ -33,7 +33,7 @@ export default function WithdrawMoneyPage() {
               How to Withdraw Money from Card Rummy?
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8">
-              Fast, Secure & Easy Cash Out with JazzCash, EasyPaisa & Bank Transfer
+              Fast, Secure & Easy Cash Out with JazzCash, EasyPaisa & Bank Card
             </p>
             <Link
               href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
@@ -141,7 +141,7 @@ export default function WithdrawMoneyPage() {
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Select Payment Method</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Card Rummy provides many payment methods, including Easypaisa, Jazzcash, and Bank Transfer. Select the payment method that you want to use easily.
+                      Card Rummy provides many payment methods, including Easypaisa, Jazzcash, and Bank Card. Select the payment method that you want to use easily.
                     </p>
                   </div>
                 </div>
@@ -307,6 +307,24 @@ export default function WithdrawMoneyPage() {
                   If your withdrawal fails on Card Rummy, contact its customer support team to approve your withdrawal.
                 </p>
               </div>
+
+              <div className="bg-secondary rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+                <h3 className="text-xl font-bold text-accent mb-3">
+                  How to bind bank?
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  To bind your bank for withdrawals, go to Wallet &gt; Withdrawal &gt; Bank Card. Select your desired bank from the list, then enter your account number, user name, and email. Once submitted, your bank account will be linked and ready for withdrawals.
+                </p>
+              </div>
+
+              <div className="bg-secondary rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+                <h3 className="text-xl font-bold text-accent mb-3">
+                  What is the maximum withdrawal at a time?
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  For Bank Card withdrawals, the maximum amount you can withdraw at a time is PKR 20,000. For JazzCash and EasyPaisa, limits may vary—check the withdrawal section in the app for current limits.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -334,66 +352,72 @@ export default function WithdrawMoneyPage() {
         </div>
       </section>
 
-      {/* Structured Data */}
+      {/* Structured Data - Article + HowTo + FAQ for AI citation */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to Withdraw Money from Card Rummy",
-            "description": "Step-by-step guide to withdraw money from Card Rummy using JazzCash, EasyPaisa, and Bank Transfer",
-            "step": [
+            "@graph": [
               {
-                "@type": "HowToStep",
-                "name": "Open Card Rummy App",
-                "text": "Open the Card Rummy app on your phone and log in to your account."
+                "@type": "Article",
+                "@id": "https://cardrummyapp.com.pk/withdraw-money-from-card-rummy#article",
+                "headline": "How to Withdraw Money from Card Rummy?",
+                "description": "Step-by-step guide to withdraw money from Card Rummy using JazzCash, EasyPaisa, and Bank Card. Learn the complete withdrawal process for secure cash out.",
+                "url": "https://cardrummyapp.com.pk/withdraw-money-from-card-rummy",
+                "articleBody": "Card Rummy is a well-known online card game that offers many variants of Teen Patti and allows players to earn real money. You can withdraw funds to JazzCash, EasyPaisa, or Bank Card. For Bank Card, choose your bank, enter account number, user name, and email. Maximum withdrawal via Bank Card is PKR 20,000. The process takes 9 steps: open app, click wallet, choose withdraw, type amount, select payment method, enter details, confirm, wait for processing, then check your account.",
+                "author": { "@type": "Organization", "name": "Card Rummy", "url": "https://cardrummyapp.com.pk" },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "Card Rummy",
+                  "logo": { "@type": "ImageObject", "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp" }
+                },
+                "datePublished": "2026-01-01",
+                "dateModified": "2026-03-13",
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://cardrummyapp.com.pk/withdraw-money-from-card-rummy" },
+                "inLanguage": "en-US",
+                "hasPart": {
+                  "@type": "HowTo",
+                  "@id": "https://cardrummyapp.com.pk/withdraw-money-from-card-rummy#howto",
+                  "name": "Withdraw Money from Card Rummy"
+                }
               },
               {
-                "@type": "HowToStep",
-                "name": "Click on Wallet Option",
-                "text": "Click on the wallet option to see your balance and withdrawal options."
+                "@type": "HowTo",
+                "@id": "https://cardrummyapp.com.pk/withdraw-money-from-card-rummy#howto",
+                "name": "How to Withdraw Money from Card Rummy",
+                "description": "Step-by-step guide to withdraw money from Card Rummy using JazzCash, EasyPaisa, and Bank Card.",
+                "url": "https://cardrummyapp.com.pk/withdraw-money-from-card-rummy",
+                "totalTime": "PT5M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "PKR", "value": "0" },
+                "step": [
+                  { "@type": "HowToStep", "name": "Open Card Rummy App", "text": "Open the Card Rummy app on your phone and log in to your account." },
+                  { "@type": "HowToStep", "name": "Click on Wallet Option", "text": "Click on the wallet option to see your balance and withdrawal options." },
+                  { "@type": "HowToStep", "name": "Choose Withdraw Button", "text": "Choose the withdraw button to start the withdrawal process." },
+                  { "@type": "HowToStep", "name": "Type Amount", "text": "Type the amount you want to cash out within withdrawal limits." },
+                  { "@type": "HowToStep", "name": "Select Payment Method", "text": "Select your payment method: Easypaisa, Jazzcash, or Bank Card." },
+                  { "@type": "HowToStep", "name": "Enter Payment Details", "text": "Enter your account information including account number and name. For Bank Card, add user name and email." },
+                  { "@type": "HowToStep", "name": "Confirm Payout", "text": "Re-check all details and confirm your withdrawal." },
+                  { "@type": "HowToStep", "name": "Wait for Processing", "text": "Wait for Card Rummy to process your withdrawal (usually within 24 hours)." },
+                  { "@type": "HowToStep", "name": "Check Your Account", "text": "Check your personal account to confirm you've received the payment." }
+                ]
               },
               {
-                "@type": "HowToStep",
-                "name": "Choose Withdraw Button",
-                "text": "Choose the withdraw button to start the withdrawal process."
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Type Amount",
-                "text": "Type the amount you want to cash out within withdrawal limits."
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Select Payment Method",
-                "text": "Select your payment method: Easypaisa, Jazzcash, or Bank Transfer."
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Enter Payment Details",
-                "text": "Enter your account information including account number and name."
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Confirm Payout",
-                "text": "Re-check all details and confirm your withdrawal."
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Wait for Processing",
-                "text": "Wait for Card Rummy to process your withdrawal (usually within 24 hours)."
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Check Your Account",
-                "text": "Check your personal account to confirm you've received the payment."
+                "@type": "FAQPage",
+                "@id": "https://cardrummyapp.com.pk/withdraw-money-from-card-rummy#faq",
+                "mainEntity": [
+                  { "@type": "Question", "name": "What is the minimum amount that we can withdraw from the Card Rummy Game?", "acceptedAnswer": { "@type": "Answer", "text": "You can easily withdraw a minimum of Rs 100 from your Card Rummy account, as it supports withdrawals of that amount." } },
+                  { "@type": "Question", "name": "How long does Card Rummy take to send withdrawals?", "acceptedAnswer": { "@type": "Answer", "text": "Card Rummy usually processes withdrawals in 3 to 24 hours. It may take longer due to some issues." } },
+                  { "@type": "Question", "name": "What should we do if our payout fails on Card Rummy?", "acceptedAnswer": { "@type": "Answer", "text": "If your withdrawal fails on Card Rummy, contact its customer support team to approve your withdrawal." } },
+                  { "@type": "Question", "name": "How to bind bank?", "acceptedAnswer": { "@type": "Answer", "text": "To bind your bank for withdrawals, go to Wallet > Withdrawal > Bank Card. Select your desired bank from the list, then enter your account number, user name, and email. Once submitted, your bank account will be linked and ready for withdrawals." } },
+                  { "@type": "Question", "name": "What is the maximum withdrawal at a time?", "acceptedAnswer": { "@type": "Answer", "text": "For Bank Card withdrawals, the maximum amount you can withdraw at a time is PKR 20,000. For JazzCash and EasyPaisa, limits may vary—check the withdrawal section in the app for current limits." } }
+                ]
               }
             ]
-          })
+          }).replace(/</g, "\\u003c")
         }}
       />
-    </div>
+    </main>
   );
 }
 

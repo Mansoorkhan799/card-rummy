@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function DepositMoneyPage() {
   return (
-    <div className="min-h-screen bg-primary">
+    <main className="min-h-screen bg-primary" itemScope itemType="https://schema.org/Article">
       {/* Hero Section */}
       <section className="relative py-12 md:py-20 bg-secondary border-b border-gray-800">
         <div className="container mx-auto px-4">
@@ -304,56 +304,68 @@ export default function DepositMoneyPage() {
         </div>
       </section>
 
-      {/* Structured Data */}
+      {/* Structured Data - Article + HowTo + FAQ for AI citation */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to Deposit Money in Card Rummy",
-            "description": "Step-by-step guide to deposit money in Card Rummy using JazzCash and EasyPaisa",
-            "step": [
+            "@graph": [
               {
-                "@type": "HowToStep",
-                "name": "Open Card Rummy App",
-                "text": "Open the Card Rummy app on your Android device and log in to your account."
+                "@type": "Article",
+                "@id": "https://cardrummyapp.com.pk/deposit-money-in-card-rummy#article",
+                "headline": "How to Deposit Money in Card Rummy?",
+                "description": "Step-by-step guide to deposit money in Card Rummy using JazzCash and EasyPaisa. Quick, safe, and secure payment methods.",
+                "url": "https://cardrummyapp.com.pk/deposit-money-in-card-rummy",
+                "articleBody": "Card Rummy is an exciting online game where users can play many amazing games daily. Adding funds to the Card Rummy game is easy with JazzCash and EasyPaisa. The process: open app, click shop, select payment method (JazzCash or EasyPaisa), choose amount (Rs 200 to Rs 2000), click Add Chips, enter account number, approve payment request, then wait for funds to appear in your account.",
+                "author": { "@type": "Organization", "name": "Card Rummy", "url": "https://cardrummyapp.com.pk" },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "Card Rummy",
+                  "logo": { "@type": "ImageObject", "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp" }
+                },
+                "datePublished": "2026-01-01",
+                "dateModified": "2026-03-13",
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://cardrummyapp.com.pk/deposit-money-in-card-rummy" },
+                "inLanguage": "en-US",
+                "hasPart": {
+                  "@type": "HowTo",
+                  "@id": "https://cardrummyapp.com.pk/deposit-money-in-card-rummy#howto",
+                  "name": "Deposit Money in Card Rummy"
+                }
               },
               {
-                "@type": "HowToStep",
-                "name": "Click on Shop Option",
-                "text": "After logging in, click on the shop button to start the depositing process."
+                "@type": "HowTo",
+                "@id": "https://cardrummyapp.com.pk/deposit-money-in-card-rummy#howto",
+                "name": "How to Deposit Money in Card Rummy",
+                "description": "Step-by-step guide to deposit money in Card Rummy using JazzCash and EasyPaisa",
+                "url": "https://cardrummyapp.com.pk/deposit-money-in-card-rummy",
+                "totalTime": "PT3M",
+                "estimatedCost": { "@type": "MonetaryAmount", "currency": "PKR", "value": "200" },
+                "step": [
+                  { "@type": "HowToStep", "name": "Open Card Rummy App", "text": "Open the Card Rummy app on your Android device and log in to your account." },
+                  { "@type": "HowToStep", "name": "Click on Shop Option", "text": "After logging in, click on the shop button to start the depositing process." },
+                  { "@type": "HowToStep", "name": "Select Payment Method", "text": "Choose a payment method like JazzCash or EasyPaisa." },
+                  { "@type": "HowToStep", "name": "Choose Amount", "text": "Select the amount you want to deposit (Rs 200, Rs 500, Rs 1000, or Rs 2000)." },
+                  { "@type": "HowToStep", "name": "Click on Add Chips", "text": "Click the Add Chips option and enter your account number." },
+                  { "@type": "HowToStep", "name": "Approve Payment", "text": "Log in to your mobile wallet and approve the payment request." },
+                  { "@type": "HowToStep", "name": "Wait for Complete Payment", "text": "Wait for the deposit to be added to your Card Rummy account." }
+                ]
               },
               {
-                "@type": "HowToStep",
-                "name": "Select Payment Method",
-                "text": "Choose a payment method like JazzCash or EasyPaisa."
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Choose Amount",
-                "text": "Select the amount you want to deposit (Rs 200, Rs 500, Rs 1000, or Rs 2000)."
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Click on Add Chips",
-                "text": "Click the Add Chips option and enter your account number."
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Approve Payment",
-                "text": "Log in to your mobile wallet and approve the payment request."
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Wait for Complete Payment",
-                "text": "Wait for the deposit to be added to your Card Rummy account."
+                "@type": "FAQPage",
+                "@id": "https://cardrummyapp.com.pk/deposit-money-in-card-rummy#faq",
+                "mainEntity": [
+                  { "@type": "Question", "name": "How can we add money to our Card Rummy account?", "acceptedAnswer": { "@type": "Answer", "text": "You can add money to your Card Rummy account by opening the app, selecting the shop option, choosing a payment method and amount, confirming the deposit, and approving the payment request." } },
+                  { "@type": "Question", "name": "Is adding funds to Card Rummy secure?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, it is safe to add funds to Card Rummy, as it uses a modern security system to protect your personal data and funds." } },
+                  { "@type": "Question", "name": "Which payment methods are available on Card Rummy?", "acceptedAnswer": { "@type": "Answer", "text": "Card Rummy provides payment methods including Easypaisa and Jazzcash that are secure and authentic." } }
+                ]
               }
             ]
-          })
+          }).replace(/</g, "\\u003c")
         }}
       />
-    </div>
+    </main>
   );
 }
 

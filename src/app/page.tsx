@@ -944,7 +944,7 @@ export default function Home() {
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Ways to Deposit & Withdraw Money in Card Rummy</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             <div className="bg-[#0A1029] p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">1: Jazzcash</h3>
               <p className="text-gray-300">Jazzcash is one of the most trusted and secure mobile banking services that allows you to deposit money quickly into your gaming account and start playing games quickly. It's a fast and safe transaction system that allows you to withdraw your winnings directly into your account wallet. The best part of this method is that you can wait a long time because the transactions are completed within seconds.</p>
@@ -952,6 +952,10 @@ export default function Home() {
             <div className="bg-[#0A1029] p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">2: Easypaisa</h3>
               <p className="text-gray-300">Easypaisa is another secure and most commonly used payment method that is similar to the JazzCash method. It allows you to deposit or withdraw money without any difficulty. Through this method, you can add funds to your game account and transfer winnings to your Easypaisa wallet in just a few steps. The process of this method is very safe, reliable, and suitable for all types of users.</p>
+            </div>
+            <div className="bg-[#0A1029] p-6 rounded-lg md:col-span-2 lg:col-span-1">
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">3: Bank Card</h3>
+              <p className="text-gray-300">Bank Card is a convenient withdrawal option that lets you send your winnings directly to your bank account. Simply choose your desired bank, enter your account number, user name, and email, then submit your withdrawal request. With Bank Card, you can withdraw up to PKR 20,000 maximum per transaction, making it ideal for larger payouts. This method provides a secure way to receive your earnings straight to your bank account.</p>
             </div>
           </div>
         </div>
@@ -980,7 +984,7 @@ export default function Home() {
               <li>Open the Card Rummy app and log in to your account.</li>
               <li>Click on the Wallet option that is available on the main screen.</li>
               <li>In the wallet section, click on the Withdrawal option.</li>
-              <li>Choose your payment method, like JazzCash or EasyPaisa.</li>
+              <li>Choose your payment method, like JazzCash, EasyPaisa, or Bank Card.</li>
               <li>Now enter the amount that you want to withdraw.</li>
               <li>Enter some required details, like the account number.</li>
               <li>Double-check all entered details and click on Confirm.</li>
@@ -1205,6 +1209,34 @@ export default function Home() {
             </summary>
             <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
               When you share your referral link with others, or when someone joins this app through your link, you can receive a commission.
+            </div>
+          </details>
+
+          <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
+            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors">
+              How to bind bank?
+              <span className="transition group-open:rotate-180">
+                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
+              To bind your bank for withdrawals, go to Wallet &gt; Withdrawal &gt; Bank Card. Select your desired bank from the list, then enter your account number, user name, and email. Once submitted, your bank account will be linked and ready for withdrawals.
+            </div>
+          </details>
+
+          <details className="group bg-[#0a1029]/50 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-md hover:shadow-lg">
+            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium hover:text-[#FFA500] transition-colors">
+              What is the maximum withdrawal at a time?
+              <span className="transition group-open:rotate-180">
+                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <div className="p-4 pt-0 text-gray-300 border-t border-gray-700/50">
+              For Bank Card withdrawals, the maximum amount you can withdraw at a time is PKR 20,000. For JazzCash and EasyPaisa, limits may vary—check the withdrawal section in the app for current limits.
             </div>
           </details>
 
