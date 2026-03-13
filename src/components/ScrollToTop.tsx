@@ -1,26 +1,41 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
+
+// Throttle scroll handler to reduce main-thread work and improve INP
+function useThrottledScroll(callback: () => void, delay: number) {
+  const lastRan = useRef(Date.now());
+  const rafId = useRef<number | null>(null);
+
+  useEffect(() => {
+    const handler = () => {
+      if (rafId.current) return;
+      rafId.current = requestAnimationFrame(() => {
+        const now = Date.now();
+        if (now - lastRan.current >= delay) {
+          callback();
+          lastRan.current = now;
+        }
+        rafId.current = null;
+      });
+    };
+    window.addEventListener('scroll', handler, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handler);
+      if (rafId.current) cancelAnimationFrame(rafId.current);
+    };
+  }, [callback, delay]);
+}
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when page is scrolled up to given distance
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  // Set the scroll event listener
-  useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
+  const toggleVisibility = useCallback(() => {
+    const visible = window.pageYOffset > 300;
+    setIsVisible((prev) => (prev !== visible ? visible : prev));
   }, []);
+
+  useThrottledScroll(toggleVisibility, 150);
 
   // Scroll to top smoothly
   const scrollToTop = () => {

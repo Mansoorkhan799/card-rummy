@@ -1,16 +1,25 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useTransition } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [, startTransition] = useTransition();
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const toggleMenu = () => {
+    startTransition(() => setIsOpen((prev) => !prev));
+  };
+
+  const closeMenu = () => {
+    startTransition(() => setIsOpen(false));
+  };
 
   if (!mounted) {
     return (
@@ -38,7 +47,7 @@ export default function MobileNavigation() {
     <div className="md:hidden">
       {/* Mobile menu button */}
       <button 
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={toggleMenu}
         className="flex items-center text-accent p-1"
         aria-label={isOpen ? 'Close menu' : 'Open menu'}
         aria-expanded={isOpen}
@@ -59,7 +68,7 @@ export default function MobileNavigation() {
       {isOpen && (
         <div className="fixed inset-0 z-50 flex flex-col bg-primary">
           <div className="flex justify-between items-center p-4 border-b border-gray-800">
-            <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
+            <Link href="/" className="flex items-center gap-3" onClick={closeMenu}>
               <div className="relative w-8 h-8 flex-shrink-0">
                 <Image
                   src="/card-rummy.webp"
@@ -73,7 +82,7 @@ export default function MobileNavigation() {
               <span className="text-accent text-xl font-bold">Card Rummy</span>
             </Link>
             <button 
-              onClick={() => setIsOpen(false)}
+              onClick={closeMenu}
               className="text-accent p-1"
               aria-label="Close menu"
             >
@@ -91,62 +100,14 @@ export default function MobileNavigation() {
           </div>
           
           <nav className="flex flex-col p-4">
-            <Link 
-              href="/" 
-              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Home
-            </Link>
-            <Link 
-              href="/download-card-rummy" 
-              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Download
-            </Link>
-            <Link 
-              href="/deposit-money-in-card-rummy" 
-              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Deposit Guide
-            </Link>
-            <Link 
-              href="/withdraw-money-from-card-rummy" 
-              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Withdraw Guide
-            </Link>
-            <Link 
-              href="/card-rummy-for-pc" 
-              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              PC Version
-            </Link>
-            <Link 
-              href="/about-us" 
-              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              About Us
-            </Link>
-            <Link 
-              href="/blog" 
-              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Blog
-            </Link>
-            <Link 
-              href="/contact-us" 
-              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact Us
-            </Link>
+            <Link href="/" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Home</Link>
+            <Link href="/download-card-rummy" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Download</Link>
+            <Link href="/deposit-money-in-card-rummy" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Deposit Guide</Link>
+            <Link href="/withdraw-money-from-card-rummy" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Withdraw Guide</Link>
+            <Link href="/card-rummy-for-pc" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>PC Version</Link>
+            <Link href="/about-us" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>About Us</Link>
+            <Link href="/blog" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Blog</Link>
+            <Link href="/contact-us" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Contact Us</Link>
           </nav>
         </div>
       )}
