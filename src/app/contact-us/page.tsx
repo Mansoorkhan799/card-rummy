@@ -45,7 +45,7 @@ export default function Contact() {
               </p>
 
               {/* Email Contact Section */}
-              <div className="bg-secondary rounded-xl p-8 border-2 border-orange-200">
+              <div className="bg-secondary rounded-xl p-6 md:p-8 border-2 border-orange-200 overflow-hidden">
                 <div className="flex items-center justify-center mb-4">
                   <svg className="w-16 h-16 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -53,15 +53,15 @@ export default function Contact() {
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-white">Email Us</h2>
                 <p className="text-center mb-4 text-gray-400">Send us your questions or concerns via email</p>
-                <div className="text-center">
-                  <a 
-                    href="mailto:support@cardrummyapp.com.pk" 
-                    className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-primary font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                <div className="flex justify-center w-full min-w-0 overflow-hidden px-4">
+                  <a
+                    href="mailto:support@cardrummyapp.com.pk"
+                    className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 bg-accent hover:bg-accent/90 text-primary font-bold py-3 px-4 md:py-4 md:px-6 rounded-full text-sm sm:text-base md:text-lg transition-all duration-300 shadow-lg hover:shadow-xl max-w-full min-w-0 overflow-hidden"
                   >
-                    <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
-                    support@cardrummyapp.com.pk
+                    <span className="break-all">support@cardrummyapp.com.pk</span>
                   </a>
                 </div>
               </div>

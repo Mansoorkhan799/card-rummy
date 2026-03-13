@@ -56,7 +56,7 @@ export default function AboutPage() {
           
           {/* Main Content */}
           <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-12">
-            <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 lg:gap-20 mb-8">
               <div className="w-full md:w-1/3 flex-shrink-0 flex justify-center md:justify-start">
                 <Link href="/" className="block">
                   <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] mx-auto md:mx-0 rounded-lg overflow-hidden bg-[#0A1029]">
@@ -72,7 +72,7 @@ export default function AboutPage() {
                   </div>
                 </Link>
               </div>
-              <div className="md:w-2/3">
+              <div className="md:w-2/3 md:pl-4 lg:pl-6">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-gray-300 leading-relaxed mb-6">
                     Welcome to <a href="https://www.cardrummyapp.com.pk/" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">www.cardrummyapp.com.pk</a>, a trusted platform to provide the latest information about 3patti <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link>. This is one of the most popular online casino games in Pakistan, having <span className="font-bold text-accent">500K+ users</span>. <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">Download Card Rummy</Link> now to join thousands of players earning real cash rewards.
