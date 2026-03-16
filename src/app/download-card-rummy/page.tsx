@@ -143,7 +143,7 @@ export default function DownloadPage() {
           <div className="relative" style={{ width: '320px', height: '320px', maxWidth: '100%' }}>
             <Image
               src="/card-rummy.webp"
-              alt="Card Rummy Logo"
+              alt="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK."
               width={320}
               height={320}
               className="object-contain drop-shadow-2xl"
@@ -297,7 +297,7 @@ export default function DownloadPage() {
       </section>
 
       {/* Back to Home */}
-      <section className="py-8 px-4 md:px-8 max-w-7xl mx-auto text-center">
+      <section className="pt-6 pb-8 px-4 md:px-8 max-w-7xl mx-auto text-center">
         <Link href="/" className="text-[#0ea5e9] hover:text-[#6366f1] font-medium transition-colors">
           ← Back to Home
         </Link>

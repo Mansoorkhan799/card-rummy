@@ -468,7 +468,7 @@ export default function CardRummyForPCPage() {
       </section>
 
       {/* Back to Home */}
-      <section className="py-8 px-4 md:px-8 max-w-7xl mx-auto text-center">
+      <section className="pt-6 pb-4 px-4 md:px-8 max-w-7xl mx-auto text-center">
         <Link href="/" className="text-[#0ea5e9] hover:text-[#6366f1] font-medium transition-colors">
           ← Back to Home
         </Link>

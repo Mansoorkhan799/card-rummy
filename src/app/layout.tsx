@@ -143,7 +143,8 @@ export default function RootLayout({
         <link rel="icon" href="/card-rummy-logo.webp" type="image/webp" sizes="192x192" />
         <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="512x512" />
         <link rel="apple-touch-icon" href="/card-rummy-logo.webp" sizes="180x180" />
-        <meta property="og:image" content="https://cardrummyapp.com.pk/card-rummy-logo.webp" />
+        <meta property="og:image" content="https://cardrummyapp.com.pk/card-rummy.webp" />
+        <meta property="og:image:alt" content="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger." />
         
         {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
@@ -188,7 +189,7 @@ export default function RootLayout({
       >
         <div className="stars-bg fixed inset-0 z-0 opacity-20"></div>
         <Header />
-        <main className="flex-grow relative z-10">
+        <main className="relative z-10">
         {children}
         </main>
         <DeferredStyles />

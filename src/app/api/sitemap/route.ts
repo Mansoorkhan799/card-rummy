@@ -26,13 +26,13 @@ export async function GET() {
       images: [
         {
           loc: '/card-rummy.webp',
-          title: 'Card Rummy Logo',
-          caption: 'The official logo of Card Rummy gaming platform'
+          title: 'Card Rummy - Official App Icon and Brand Image',
+          caption: "Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK for Android."
         },
         {
           loc: '/card-rummy-logo.webp',
-          title: 'Card Rummy Hero Image',
-          caption: 'Card Rummy gaming platform showcase'
+          title: 'Card Rummy Official Logo',
+          caption: "Official Card Rummy logo - Pakistan's premier card gaming platform"
         }
       ]
     },

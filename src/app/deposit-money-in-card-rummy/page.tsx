@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'How to Deposit Money in Card Rummy? | Quick & Safe Payment Guide 2026',
@@ -43,6 +44,18 @@ export default function DepositMoneyPage() {
             >
               Download & Deposit Now
             </Link>
+            <div className="mt-10 flex justify-center">
+              <div className="relative w-48 h-48 md:w-56 md:h-56">
+                <Image
+                  src="/card-rummy.webp"
+                  alt="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger."
+                  width={224}
+                  height={224}
+                  className="object-contain drop-shadow-2xl"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

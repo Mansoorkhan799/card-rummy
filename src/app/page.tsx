@@ -45,6 +45,12 @@ export const metadata: Metadata = {
     description: 'Card Rummy 2026 - Pakistan\'s #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!',
     images: [
       {
+        url: 'https://cardrummyapp.com.pk/card-rummy.webp',
+        width: 512,
+        height: 512,
+        alt: 'Card Rummy - Pakistan\'s #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger.'
+      },
+      {
         url: 'https://cardrummyapp.com.pk/feature/og-image.webp',
         width: 1200,
         height: 630,
@@ -63,7 +69,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Card Rummy Pakistan v1.230 Free Download Official APK',
     description: 'Card Rummy 2026 - Pakistan\'s #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!',
-    images: ['https://cardrummyapp.com.pk/feature/og-image.webp']
+    images: ['https://cardrummyapp.com.pk/card-rummy.webp', 'https://cardrummyapp.com.pk/feature/og-image.webp']
   }
 };
 
@@ -84,6 +90,34 @@ export default function Home() {
           "target": "https://cardrummyapp.com.pk/?s={search_term_string}",
           "query-input": "required name=search_term_string"
         }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://cardrummyapp.com.pk/#webpage",
+        "url": "https://cardrummyapp.com.pk/",
+        "name": "Card Rummy Pakistan v1.230 Free Download Official APK",
+        "description": "Card Rummy 2026 - Pakistan's #1 card game platform. Download Card Rummy APK, play Teen Patti, Rummy, Dragon vs Tiger & win real cash.",
+        "isPartOf": { "@id": "https://cardrummyapp.com.pk/#website" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://cardrummyapp.com.pk/card-rummy.webp",
+          "width": 512,
+          "height": 512,
+          "name": "Card Rummy",
+          "description": "Card Rummy - Pakistan's #1 card game app. Official brand image. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK for Android."
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://cardrummyapp.com.pk/card-rummy.webp#primary",
+        "url": "https://cardrummyapp.com.pk/card-rummy.webp",
+        "contentUrl": "https://cardrummyapp.com.pk/card-rummy.webp",
+        "name": "Card Rummy",
+        "description": "Card Rummy - Pakistan's premier card game app. Official Card Rummy brand image with playing cards. Play Teen Patti, Rummy, Dragon vs Tiger and win real cash. Download Card Rummy APK.",
+        "width": 512,
+        "height": 512,
+        "license": "https://cardrummyapp.com.pk/",
+        "creator": { "@type": "Organization", "name": "Card Rummy" }
       },
       {
         "@type": "Organization",
@@ -111,8 +145,8 @@ export default function Home() {
         "name": "Card Rummy",
         "operatingSystem": "Android 5.0+",
         "applicationCategory": "GameApplication",
-        "image": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
-        "logo": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+        "image": "https://cardrummyapp.com.pk/card-rummy.webp",
+        "logo": "https://cardrummyapp.com.pk/card-rummy.webp",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.5",
@@ -128,8 +162,8 @@ export default function Home() {
         "fileSize": "49MB",
         "description": "Play Teen Patti, Rummy, Dragon Tiger and other card games. Earn real money with JazzCash & EasyPaisa withdrawals.",
         "screenshot": [
-          "https://cardrummyapp.com.pk/card-rummy-logo.webp",
           "https://cardrummyapp.com.pk/card-rummy.webp",
+          "https://cardrummyapp.com.pk/card-rummy-logo.webp",
           "https://cardrummyapp.com.pk/card-rummy-game-interface.webp",
           "https://cardrummyapp.com.pk/card-rummy-games.webp",
           "https://cardrummyapp.com.pk/card-rummy-earn-bonus.webp"
@@ -316,7 +350,7 @@ export default function Home() {
             <div className="relative ml-auto" style={{ width: '320px', height: '320px', maxWidth: '100%' }}>
               <Image
                 src="/card-rummy.webp"
-                alt="Card Rummy Logo"
+                alt="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK."
                 width={320}
                 height={320}
                 className="object-contain drop-shadow-2xl"
@@ -334,7 +368,7 @@ export default function Home() {
             <div className="relative mx-auto" style={{ width: '280px', height: '280px', maxWidth: '100%' }}>
               <Image
                 src="/card-rummy.webp"
-                alt="Card Rummy Logo"
+                alt="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK."
                 width={280}
                 height={280}
                 className="object-contain drop-shadow-2xl"

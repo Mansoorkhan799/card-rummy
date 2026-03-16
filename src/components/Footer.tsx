@@ -30,9 +30,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/download-card-rummy" className="text-gray-300 hover:text-accent transition-colors">
                   Download
-                </a>
+                </Link>
               </li>
               <li>
                 <Link href="/card-rummy-for-pc" className="text-gray-300 hover:text-accent transition-colors">
