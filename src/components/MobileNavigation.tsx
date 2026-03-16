@@ -101,7 +101,7 @@ export default function MobileNavigation() {
           
           <nav className="flex flex-col p-4">
             <Link href="/" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Home</Link>
-            <Link href="/download-card-rummy" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Download</Link>
+            <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Download</a>
             <Link href="/deposit-money-in-card-rummy" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Deposit Guide</Link>
             <Link href="/withdraw-money-from-card-rummy" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>Withdraw Guide</Link>
             <Link href="/card-rummy-for-pc" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors" onClick={closeMenu}>PC Version</Link>

@@ -375,12 +375,14 @@ export default function BlogHighPayoutGames() {
           </p>
 
           <div className="mt-12 text-center">
-            <Link 
-              href="/download-card-rummy"
+            <a 
+              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
               Download Card Rummy - Start Playing High-Payout Games
-            </Link>
+            </a>
           </div>
         </div>
 

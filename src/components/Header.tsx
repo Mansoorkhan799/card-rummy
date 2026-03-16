@@ -31,9 +31,9 @@ export default function Header() {
           <Link href="/" className="text-white hover:text-accent font-medium transition-colors">
             Home
           </Link>
-          <Link href="/download-card-rummy" className="text-white hover:text-accent font-medium transition-colors">
+          <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent font-medium transition-colors">
             Download
-          </Link>
+          </a>
           <Link href="/deposit-money-in-card-rummy" className="text-white hover:text-accent font-medium transition-colors">
             Deposit
           </Link>

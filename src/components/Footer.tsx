@@ -30,9 +30,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/download-card-rummy" className="text-gray-300 hover:text-accent transition-colors">
+                <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-accent transition-colors">
                   Download
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/card-rummy-for-pc" className="text-gray-300 hover:text-accent transition-colors">
@@ -101,7 +101,7 @@ export default function Footer() {
               Download Card Rummy to enjoy the best card gaming experience and earn real cash rewards on your mobile device.
             </p>
             <a 
-              href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
               target="_blank" 
               rel="noopener noreferrer" 
               className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"

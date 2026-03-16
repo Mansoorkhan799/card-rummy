@@ -36,7 +36,7 @@ export default function WithdrawMoneyPage() {
               Fast, Secure & Easy Cash Out with JazzCash, EasyPaisa & Bank Card
             </p>
             <Link
-              href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-accent text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/90 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"
@@ -53,7 +53,7 @@ export default function WithdrawMoneyPage() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> is a well-known online card game that offers many variants of Teen Patti and allows players to earn real money. If you haven't already, <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">download Card Rummy</Link> to get started. Many players play it to earn extra income. Once you win money, the first step is to cash out your funds securely.
+                <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> is a well-known online card game that offers many variants of Teen Patti and allows players to earn real money. If you haven't already, <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">download Card Rummy</a> to get started. Many players play it to earn extra income. Once you win money, the first step is to cash out your funds securely.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
                 New players can feel confused when they try to withdraw cash from Card Rummy. But the withdrawal process is straightforward, so that everyone can do it without any confusion. You can send your earnings to your personal accounts, such as Easypaisa and Jazzcash. Before withdrawing, make sure you have <Link href="/deposit-money-in-card-rummy" className="text-accent hover:underline font-semibold">deposited money in Card Rummy</Link> to start playing and winning.
@@ -341,7 +341,7 @@ export default function WithdrawMoneyPage() {
               Download Card Rummy now and start withdrawing your earnings securely!
             </p>
             <Link
-              href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-accent text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/90 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"

@@ -89,7 +89,7 @@ export default function BlogHowToUseCardRummyGuide() {
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Download Process</h3>
           <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
             <li>Visit the official <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> website: cardrummyapp.com.pk</li>
-            <li>Click the big "Download APK" button (usually orange or green) - or visit our <Link href="/download-card-rummy" className="text-[#FFA500] hover:underline font-semibold">download page</Link></li>
+            <li>Click the big "Download APK" button (usually orange or green) - or visit our <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="text-[#FFA500] hover:underline font-semibold">download page</a></li>
             <li>Your browser will warn you about downloading from unknown sources - click "OK" or "Download anyway"</li>
             <li>Wait for the APK file to download (typically 50-80MB, takes 30 seconds to 2 minutes)</li>
           </ol>
@@ -602,12 +602,14 @@ export default function BlogHowToUseCardRummyGuide() {
           </p>
 
           <div className="mt-12 text-center">
-            <Link 
-              href="/download-card-rummy"
+            <a 
+              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
               Download Card Rummy APK v1.230 - Start Your Journey
-            </Link>
+            </a>
           </div>
         </div>
 
