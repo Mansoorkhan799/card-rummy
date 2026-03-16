@@ -24,16 +24,9 @@ img {
   height: auto;
 }
 
-/* Prevent layout shift for footer - reserve space, contain layout */
+/* Footer: contain layout to reduce CLS from reflow */
 footer {
-  contain: layout style paint;
-  height: auto;
-  min-height: 320px;
-}
-@media (min-width: 768px) {
-  footer {
-    min-height: 280px;
-  }
+  contain: layout;
 }
 
 /* Optimize font loading to prevent layout shift */
@@ -46,27 +39,10 @@ body {
   font-family: inherit;
 }
 
-/* Reserve space for hero section to prevent CLS */
-section.py-8 {
-  min-height: 400px;
-}
 
-/* Reserve space for common elements to prevent CLS */
-main {
-  min-height: calc(100vh - 200px);
-}
+/* main: no forced min-height - prevents footer from shifting when main expands late */
 
-/* Optimize LCP element rendering */
-p.text-lg.text-gray-300.leading-relaxed {
-  contain: layout style;
-  min-height: 120px;
-  display: block;
-}
 
-/* Reduce layout shifts */
-section {
-  contain: layout;
-}
 
 .download-btn {
   position: relative;
