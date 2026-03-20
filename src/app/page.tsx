@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import Script from 'next/script';
 import { Metadata } from 'next';
+import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
 
 // This additional metadata enhances the page-specific SEO
 export const metadata: Metadata = {
@@ -104,7 +105,8 @@ export default function Home() {
           "width": 512,
           "height": 512,
           "name": "Card Rummy",
-          "description": "Card Rummy - Pakistan's #1 card game app. Official brand image. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK for Android."
+          "description": "Card Rummy - Pakistan's #1 card game app. Official brand image. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK for Android.",
+          ...imageObjectLicensing
         }
       },
       {
@@ -117,7 +119,8 @@ export default function Home() {
         "width": 512,
         "height": 512,
         "license": "https://cardrummyapp.com.pk/",
-        "creator": { "@type": "Organization", "name": "Card Rummy" }
+        "creator": { "@type": "Organization", "name": "Card Rummy" },
+        ...imageObjectLicensing
       },
       {
         "@type": "Organization",
@@ -128,7 +131,9 @@ export default function Home() {
           "@type": "ImageObject",
           "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
           "width": 512,
-          "height": 512
+          "height": 512,
+          ...imageObjectLicensing,
+          "creditText": "Card Rummy logo"
         },
         "sameAs": [
           "https://www.facebook.com/share/1at8tjJcje/"

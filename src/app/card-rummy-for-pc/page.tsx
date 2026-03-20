@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
 
 export const metadata: Metadata = {
   title: 'Card Rummy for PC Download Latest Version Free 2026',
@@ -55,7 +56,9 @@ export default function CardRummyForPCPage() {
       "name": "Card Rummy",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp"
+        "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+        ...imageObjectLicensing,
+        "creditText": "Card Rummy logo"
       }
     },
     "datePublished": "2026-01-03",

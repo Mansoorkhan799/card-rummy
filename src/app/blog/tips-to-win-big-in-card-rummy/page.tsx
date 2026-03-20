@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
 
 export const metadata: Metadata = {
   title: 'Tips to Win Big in Card Rummy - Expert Strategies & Tricks 2026',
@@ -311,7 +312,8 @@ export default function TipsToWinBig() {
               "name": "Card Rummy",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://cardrummyapp.com.pk/card-rummy.webp"
+                "url": "https://cardrummyapp.com.pk/card-rummy.webp",
+                ...imageObjectLicensing
               }
             },
             "mainEntityOfPage": {

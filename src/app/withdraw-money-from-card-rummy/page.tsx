@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
 
 export const metadata: Metadata = {
   title: 'How to Withdraw Money from Card Rummy? | Fast & Secure Withdrawal Guide 2026',
@@ -383,7 +384,12 @@ export default function WithdrawMoneyPage() {
                 "publisher": {
                   "@type": "Organization",
                   "name": "Card Rummy",
-                  "logo": { "@type": "ImageObject", "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp" }
+                  "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+                  ...imageObjectLicensing,
+                  "creditText": "Card Rummy logo"
+                }
                 },
                 "datePublished": "2026-01-01",
                 "dateModified": "2026-03-13",

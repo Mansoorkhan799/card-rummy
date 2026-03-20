@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
 
 export const metadata: Metadata = {
   title: 'How to Create a Card Rummy Account and Login? - Step by Step Guide',
@@ -264,7 +265,8 @@ export default function CreateAccountLogin() {
               "name": "Card Rummy",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://cardrummyapp.com.pk/card-rummy.webp"
+                "url": "https://cardrummyapp.com.pk/card-rummy.webp",
+                ...imageObjectLicensing
               }
             },
             "mainEntityOfPage": {
