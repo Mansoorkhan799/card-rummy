@@ -144,7 +144,7 @@ export default function AboutPage() {
             },
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://cardrummyapp.com.pk/about"
+              "@id": "https://cardrummyapp.com.pk/about-us"
             }
           })
         }}

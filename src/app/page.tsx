@@ -85,12 +85,7 @@ export default function Home() {
         "url": "https://cardrummyapp.com.pk/",
         "name": "Card Rummy",
         "description": "Pakistan's premier card game platform with Teen Patti, Rummy, Dragon Tiger and more",
-        "inLanguage": "en-US",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://cardrummyapp.com.pk/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "inLanguage": "en-US"
       },
       {
         "@type": "WebPage",

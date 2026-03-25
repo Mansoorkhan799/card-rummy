@@ -23,6 +23,28 @@ const nextConfig = {
     qualities: [75, 80, 90, 100], // Configure allowed image quality values
   },
 
+  async redirects() {
+    return [
+      // /about was indexed by Google but the real page is /about-us
+      {
+        source: '/about',
+        destination: '/about-us',
+        permanent: true,
+      },
+      // Malformed URLs Google crawled — send them home
+      {
+        source: '/\\$',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/\\&',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
+
   // Optimize static file serving
   async rewrites() {
     return [
