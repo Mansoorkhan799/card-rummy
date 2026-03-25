@@ -151,6 +151,7 @@ export default function DownloadPage() {
               priority={true}
               fetchPriority="high"
               quality={90}
+              sizes="(max-width: 768px) 320px, 420px"
             />
           </div>
         </div>

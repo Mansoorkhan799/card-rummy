@@ -343,50 +343,28 @@ export default function Home() {
             <p className="text-gray-400 text-sm text-center italic">*Available for Android devices only</p>
           </div>
 
-          {/* Desktop Image */}
-          <figure className="hidden md:block md:w-1/2 md:mt-8" itemScope itemType="https://schema.org/ImageObject">
+          {/* Hero Image – single component, responsive sizing via CSS */}
+          <figure
+            className="mt-8 md:mt-0 md:w-1/2 flex justify-center md:justify-end"
+            itemScope
+            itemType="https://schema.org/ImageObject"
+          >
             <meta itemProp="name" content="Card Rummy" />
             <meta itemProp="description" content="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK for Android." />
             <meta itemProp="url" content="https://cardrummyapp.com.pk/card-rummy.webp" />
-            <div className="relative ml-auto" style={{ width: '420px', height: '420px', maxWidth: '100%' }}>
-              <Image
-                src="/card-rummy.webp"
-                alt="Card Rummy – Pakistan's #1 Card Game App"
-                title="Card Rummy – Download & Play Teen Patti, Rummy, Dragon vs Tiger"
-                width={420}
-                height={420}
-                className="object-contain drop-shadow-2xl"
-                priority={true}
-                fetchPriority="high"
-                quality={90}
-                sizes="(max-width: 1280px) 420px, 420px"
-                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                itemProp="image"
-              />
-            </div>
-            <figcaption className="sr-only">Card Rummy – Pakistan&apos;s #1 card game app. Download the APK and play Teen Patti, Rummy, Dragon vs Tiger. Win real cash via JazzCash &amp; EasyPaisa.</figcaption>
-          </figure>
-
-          {/* Mobile Image */}
-          <figure className="mt-8 md:hidden" itemScope itemType="https://schema.org/ImageObject">
-            <meta itemProp="name" content="Card Rummy" />
-            <meta itemProp="url" content="https://cardrummyapp.com.pk/card-rummy.webp" />
-            <div className="relative mx-auto" style={{ width: '320px', height: '320px', maxWidth: '100%' }}>
-              <Image
-                src="/card-rummy.webp"
-                alt="Card Rummy – Pakistan's #1 Card Game App"
-                title="Card Rummy – Download & Play Teen Patti, Rummy, Dragon vs Tiger"
-                width={320}
-                height={320}
-                className="object-contain drop-shadow-2xl"
-                priority={true}
-                fetchPriority="high"
-                quality={90}
-                sizes="320px"
-                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                itemProp="image"
-              />
-            </div>
+            <Image
+              src="/card-rummy.webp"
+              alt="Card Rummy – Pakistan's #1 Card Game App"
+              title="Card Rummy – Download & Play Teen Patti, Rummy, Dragon vs Tiger"
+              width={420}
+              height={420}
+              className="object-contain drop-shadow-2xl w-[260px] h-[260px] md:w-[320px] md:h-[320px]"
+              priority={true}
+              fetchPriority="high"
+              quality={90}
+              sizes="(max-width: 768px) 260px, 320px"
+              itemProp="image"
+            />
             <figcaption className="sr-only">Card Rummy – Pakistan&apos;s #1 card game app. Download the APK and play Teen Patti, Rummy, Dragon vs Tiger. Win real cash via JazzCash &amp; EasyPaisa.</figcaption>
           </figure>
         </div>
