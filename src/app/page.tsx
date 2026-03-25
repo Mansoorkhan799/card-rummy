@@ -118,8 +118,6 @@ export default function Home() {
         "description": "Card Rummy - Pakistan's premier card game app. Official Card Rummy brand image with playing cards. Play Teen Patti, Rummy, Dragon vs Tiger and win real cash. Download Card Rummy APK.",
         "width": 512,
         "height": 512,
-        "license": "https://cardrummyapp.com.pk/",
-        "creator": { "@type": "Organization", "name": "Card Rummy" },
         ...imageObjectLicensing
       },
       {
