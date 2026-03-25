@@ -140,12 +140,13 @@ export default function DownloadPage() {
 
         {/* Logo/Image Section */}
         <div className="flex justify-center mb-12">
-          <div className="relative" style={{ width: '320px', height: '320px', maxWidth: '100%' }}>
+          <div className="relative" style={{ width: '420px', height: '420px', maxWidth: '100%' }}>
             <Image
               src="/card-rummy.webp"
               alt="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK."
-              width={320}
-              height={320}
+              title="Card Rummy – Free Download APK for Android"
+              width={420}
+              height={420}
               className="object-contain drop-shadow-2xl"
               priority={true}
               fetchPriority="high"

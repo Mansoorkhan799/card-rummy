@@ -62,7 +62,8 @@ export default function AboutPage() {
                   <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] mx-auto md:mx-0 rounded-lg overflow-hidden bg-[#0A1029]">
                     <Image 
                       src="/card-rummy.webp" 
-                      alt="Card Rummy Logo" 
+                      alt="Card Rummy – Pakistan's Premier Card Gaming Platform"
+                      title="About Card Rummy – Pakistan's #1 Card Game App"
                       width={320}
                       height={320}
                       sizes="(max-width: 768px) 280px, 320px"

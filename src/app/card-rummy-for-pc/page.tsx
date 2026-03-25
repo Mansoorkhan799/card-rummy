@@ -107,9 +107,10 @@ export default function CardRummyForPCPage() {
           <div className="relative" style={{ width: '280px', height: '280px', maxWidth: '100%' }}>
             <Image
               src="/card-rummy.webp"
-              alt="Card Rummy for PC"
-              width={280}
-              height={280}
+              alt="Card Rummy for PC – Play on Windows with Android Emulator"
+              title="Card Rummy for PC – Download & Play on Windows"
+              width={320}
+              height={320}
               className="object-contain drop-shadow-2xl"
               priority={true}
             />

@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://cardrummyapp.com.pk/card-rummy.webp',
-        width: 512,
-        height: 512,
+        width: 1024,
+        height: 1024,
         alt: 'Card Rummy - Pakistan\'s #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger.'
       },
       {
@@ -97,8 +97,8 @@ export default function Home() {
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://cardrummyapp.com.pk/card-rummy.webp",
-          "width": 512,
-          "height": 512,
+          "width": 1024,
+          "height": 1024,
           "name": "Card Rummy",
           "description": "Card Rummy - Pakistan's #1 card game app. Official brand image. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK for Android.",
           ...imageObjectLicensing
@@ -111,8 +111,8 @@ export default function Home() {
         "contentUrl": "https://cardrummyapp.com.pk/card-rummy.webp",
         "name": "Card Rummy",
         "description": "Card Rummy - Pakistan's premier card game app. Official Card Rummy brand image with playing cards. Play Teen Patti, Rummy, Dragon vs Tiger and win real cash. Download Card Rummy APK.",
-        "width": 512,
-        "height": 512,
+        "width": 1024,
+        "height": 1024,
         ...imageObjectLicensing
       },
       {
@@ -348,18 +348,18 @@ export default function Home() {
             <meta itemProp="name" content="Card Rummy" />
             <meta itemProp="description" content="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK for Android." />
             <meta itemProp="url" content="https://cardrummyapp.com.pk/card-rummy.webp" />
-            <div className="relative ml-auto" style={{ width: '320px', height: '320px', maxWidth: '100%' }}>
+            <div className="relative ml-auto" style={{ width: '420px', height: '420px', maxWidth: '100%' }}>
               <Image
                 src="/card-rummy.webp"
                 alt="Card Rummy – Pakistan's #1 Card Game App"
                 title="Card Rummy – Download & Play Teen Patti, Rummy, Dragon vs Tiger"
-                width={320}
-                height={320}
+                width={420}
+                height={420}
                 className="object-contain drop-shadow-2xl"
                 priority={true}
                 fetchPriority="high"
                 quality={90}
-                sizes="320px"
+                sizes="(max-width: 1280px) 420px, 420px"
                 style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                 itemProp="image"
               />
@@ -371,18 +371,18 @@ export default function Home() {
           <figure className="mt-8 md:hidden" itemScope itemType="https://schema.org/ImageObject">
             <meta itemProp="name" content="Card Rummy" />
             <meta itemProp="url" content="https://cardrummyapp.com.pk/card-rummy.webp" />
-            <div className="relative mx-auto" style={{ width: '280px', height: '280px', maxWidth: '100%' }}>
+            <div className="relative mx-auto" style={{ width: '320px', height: '320px', maxWidth: '100%' }}>
               <Image
                 src="/card-rummy.webp"
                 alt="Card Rummy – Pakistan's #1 Card Game App"
                 title="Card Rummy – Download & Play Teen Patti, Rummy, Dragon vs Tiger"
-                width={280}
-                height={280}
+                width={320}
+                height={320}
                 className="object-contain drop-shadow-2xl"
                 priority={true}
                 fetchPriority="high"
                 quality={90}
-                sizes="280px"
+                sizes="320px"
                 style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                 itemProp="image"
               />

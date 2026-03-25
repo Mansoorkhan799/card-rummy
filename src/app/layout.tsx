@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     icon: [
       { url: '/favicon.ico', type: 'image/x-icon', sizes: 'any' },
       { url: '/card-rummy-logo.webp', type: 'image/webp', sizes: '192x192' },
-      { url: '/card-rummy.webp', type: 'image/webp', sizes: '512x512' }
+      { url: '/card-rummy.webp', type: 'image/webp', sizes: '1024x1024' }
     ],
     apple: [
       { url: '/card-rummy-logo.webp', sizes: '180x180' }
@@ -141,7 +141,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16 32x32" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/card-rummy-logo.webp" type="image/webp" sizes="192x192" />
-        <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="512x512" />
+        <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="1024x1024" />
         <link rel="apple-touch-icon" href="/card-rummy-logo.webp" sizes="180x180" />
         <meta property="og:image" content="https://cardrummyapp.com.pk/card-rummy.webp" />
         <meta property="og:image:alt" content="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger." />

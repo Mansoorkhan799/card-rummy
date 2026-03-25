@@ -50,6 +50,7 @@ export default function WithdrawMoneyPage() {
                 <Image
                   src="/card-rummy.webp"
                   alt="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger."
+                  title="Card Rummy – Withdraw Money via JazzCash & EasyPaisa"
                   width={224}
                   height={224}
                   className="object-contain drop-shadow-2xl"
