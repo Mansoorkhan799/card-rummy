@@ -63,12 +63,13 @@ const nextConfig = {
   // Optimize headers
   async headers() {
     return [
+      // HTML pages: always revalidate so Googlebot gets fresh content
       {
         source: '/:path*',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            value: 'public, max-age=0, must-revalidate',
           },
           {
             key: 'X-DNS-Prefetch-Control',
@@ -84,12 +85,23 @@ const nextConfig = {
           },
         ],
       },
+      // Immutable cache only for fingerprinted static assets
       {
         source: '/_next/static/:path*',
         headers: [
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // Public images: long cache but allow revalidation
+      {
+        source: '/:path*.webp',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=2592000, stale-while-revalidate=86400',
           },
         ],
       },
