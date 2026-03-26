@@ -86,142 +86,97 @@ export default function WithdrawMoneyPage() {
               Step-By-Step Guide to Withdraw Money from Card Rummy
             </h2>
 
-            <div className="space-y-8">
-              {/* Step 1 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+            <ol className="space-y-8 list-none">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    1
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">1</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Open Card Rummy App</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      First, open the Card Rummy app on your phone and log in to your account using your registered mobile number and password. You must have a strong internet connection to avoid login issues.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">First, open the Card Rummy app on your phone and log in to your account using your registered mobile number and password. You must have a strong internet connection to avoid login issues.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 2 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    2
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">2</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Click on Wallet Option</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      After logging in to your Card Rummy account, click on the wallet option. You will see your current balance and other options, such as the withdraw and deposit buttons.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">After logging in to your Card Rummy account, click on the wallet option. You will see your current balance and other options, such as the withdraw and deposit buttons.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 3 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    3
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">3</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Choose Withdraw Button</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      After clicking on the wallet option, choose the withdraw button to start the withdrawal process. You will see different options, such as payment methods and payment amounts.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">After clicking on the wallet option, choose the withdraw button to start the withdrawal process. You will see different options, such as payment methods and payment amounts.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 4 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    4
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">4</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Type Amount</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      Type the amount that you want to cash out. It must be within withdrawal limits. Review your winnings before typing the withdrawal amount.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">Type the amount that you want to cash out. It must be within withdrawal limits. Review your winnings before typing the withdrawal amount.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 5 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    5
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">5</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Select Payment Method</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      Card Rummy provides many payment methods, including Easypaisa, Jazzcash, and Bank Card. Select the payment method that you want to use easily.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">Card Rummy provides many payment methods, including Easypaisa, Jazzcash, and Bank Card. Select the payment method that you want to use easily.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 6 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    6
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">6</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Enter Payment Details</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      Now enter your account information, including account number and name. Enter the correct payment details to avoid problems in the withdrawal process.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">Now enter your account information, including account number and name. Enter the correct payment details to avoid problems in the withdrawal process.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 7 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    7
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">7</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Confirm Payout</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      Re-check all withdrawal details carefully. If the information is correct, confirm your withdrawal by clicking on the withdraw button.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">Re-check all withdrawal details carefully. If the information is correct, confirm your withdrawal by clicking on the withdraw button.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 8 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    8
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">8</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Wait for Processing</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      After confirming the withdrawal, Card Rummy will start processing your withdrawal request. It usually takes 24 hours or less. It may take longer due to network issues or payment delays.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">After confirming the withdrawal, Card Rummy will start processing your withdrawal request. It usually takes 24 hours or less. It may take longer due to network issues or payment delays.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 9 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    9
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">9</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Check Your Account</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      After successfully withdrawing the withdrawal request, you will receive your payment in your personal account. Check your account, and if you have received money, you can use it however you like.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">After successfully withdrawing, you will receive your payment in your personal account. Check your account, and if you have received money, you can use it however you like.</p>
                   </div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ol>
           </div>
         </div>
       </section>

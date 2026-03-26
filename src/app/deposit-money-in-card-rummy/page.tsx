@@ -86,112 +86,77 @@ export default function DepositMoneyPage() {
               Steps to Deposit Money in Card Rummy
             </h2>
 
-            <div className="space-y-8">
-              {/* Step 1 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+            <ol className="space-y-8 list-none">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    1
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">1</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Open Card Rummy App</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      First, open the Card Rummy app on your Android device. Your internet connection must be stable to open the app. Log in to your account by entering your registered phone number and password. Enter your login details correctly to log in successfully.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">First, open the Card Rummy app on your Android device. Your internet connection must be stable to open the app. Log in to your account by entering your registered phone number and password. Enter your login details correctly to log in successfully.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 2 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    2
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">2</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Click on Shop Option</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      After logging in, your dashboard will appear, where you can see many options and different games. Click on the shop button to start the depositing process.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">After logging in, your dashboard will appear, where you can see many options and different games. Click on the shop button to start the depositing process.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 3 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    3
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">3</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Select Payment Method</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      After clicking the shop button, a deposit page opens, showing payment methods and options. Choose a payment method, like JazzCash or Easy Paisa, that you can use easily.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">After clicking the shop button, a deposit page opens, showing payment methods and options. Choose a payment method, like JazzCash or Easy Paisa, that you can use easily.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 4 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    4
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">4</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Choose Amount</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      After selecting the payment method, choose the amount you can afford to lose. There are many options like Rs 200, Rs 500, Rs 1000, or Rs 2000.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">After selecting the payment method, choose the amount you can afford to lose. There are many options like Rs 200, Rs 500, Rs 1000, or Rs 2000.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 5 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    5
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">5</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Click on Add Chips</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      After entering the deposit details, click the Add Chips option. You will be redirected to the payment page, where you need to enter the account number that you want to use for payment. Click on the submit button to confirm the deposit.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">After entering the deposit details, click the Add Chips option. You will be redirected to the payment page, where you need to enter the account number that you want to use for payment. Click on the submit button to confirm the deposit.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 6 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    6
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">6</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Approve Payment</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      After clicking on the submit button, you will receive a payment request on your selected account. Log in to your account and approve the payment request that you have received from 3Card Rummy.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">After clicking on the submit button, you will receive a payment request on your selected account. Log in to your account and approve the payment request that you have received from Card Rummy.</p>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              {/* Step 7 */}
-              <div className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+              <li className="bg-secondary rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029]0 text-white rounded-full flex items-center justify-center text-xl font-bold mr-6">
-                    7
-                  </div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-xl font-bold mr-6" aria-hidden="true">7</div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Wait for Complete Payment</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      After approving the payment request, a deposit will be added to your 3Patti Card Rummy account instantly. Sometimes it can take longer due to payment delays or network issues. When you receive payment, you can use it to play games without any hurdles.
-                    </p>
+                    <p className="text-gray-300 leading-relaxed">After approving the payment request, a deposit will be added to your Card Rummy account instantly. Sometimes it can take longer due to payment delays or network issues. When you receive payment, you can use it to play games without any hurdles.</p>
                   </div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ol>
           </div>
         </div>
       </section>
