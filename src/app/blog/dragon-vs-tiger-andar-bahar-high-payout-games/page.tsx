@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Card Rummy App 2026',
+  title: 'Dragon vs Tiger & Andar Bahar in Card Rummy',
   description: 'Discover the best high-payout games in Card Rummy: Dragon vs Tiger, Andar Bahar, Teen Patti & Rummy. Learn which games offer highest win rates & fastest earnings in Pakistan 2026!',
   keywords: [
     'Dragon vs Tiger Card Rummy',

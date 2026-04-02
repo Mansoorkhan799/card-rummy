@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: '3Patti Blue vs Card Rummy: Which Game Is Better for Earning Real Cash? 2026',
+  title: '3Patti Blue vs Card Rummy – Which Is Better?',
   description: 'Complete comparison: 3Patti Blue vs Card Rummy. Features, bonuses, withdrawal speed, game variety & earning potential. Find out which app pays better in 2026!',
   keywords: [
     '3Patti Blue vs Card Rummy',

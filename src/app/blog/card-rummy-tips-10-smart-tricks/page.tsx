@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Card Rummy Tips: 10 Smart Tricks to Play Safely and Win More 2026',
+  title: '10 Smart Card Rummy Tips to Win More',
   description: '10 proven Card Rummy tips and tricks 2026: Bankroll management, game selection, bonus maximization, withdrawal strategies & safe play tips to increase winnings in Pakistan!',
   keywords: [
     'Card Rummy tips',

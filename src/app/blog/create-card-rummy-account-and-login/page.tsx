@@ -5,7 +5,7 @@ import BlogPostSchema from '@/components/BlogPostSchema';
 import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
 
 export const metadata: Metadata = {
-  title: 'How to Create a Card Rummy Account and Login? - Step by Step Guide',
+  title: 'How to Create Card Rummy Account & Login',
   description: 'Learn how to create your Card Rummy account and login with our step-by-step guide. Get started playing games and earning rewards in minutes.',
   keywords: ['Card Rummy account', 'Card Rummy login', 'Card Rummy registration', 'Card Rummy sign up', 'Card Rummy guide'],
   robots: {

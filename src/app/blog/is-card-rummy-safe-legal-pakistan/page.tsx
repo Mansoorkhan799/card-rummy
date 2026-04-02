@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Is Card Rummy Safe and Legal in Pakistan? Risks, Rules, and Safe Play Tips 2026',
+  title: 'Is Card Rummy Safe & Legal in Pakistan? 2026',
   description: 'Is Card Rummy legal in Pakistan? Complete safety guide 2026: Legal status, risks, security measures, withdrawal safety, and tips for safe play. Know before you play!',
   keywords: [
     'is Card Rummy legal Pakistan',

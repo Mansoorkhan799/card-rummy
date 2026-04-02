@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'IPs Exceed Issue in Card Rummy! How to Fix? 2026',
+  title: 'Fix IPs Exceed Issue in Card Rummy',
   description: 'Getting "IPs Exceed" error in Card Rummy? Learn what causes it, how to fix it, and prevent it. Complete troubleshooting guide for Pakistan players 2026.',
   keywords: [
     'IPs exceed Card Rummy',

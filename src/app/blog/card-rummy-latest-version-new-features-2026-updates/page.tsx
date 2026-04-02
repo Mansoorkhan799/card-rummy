@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Card Rummy Latest Version: New Features and 2026 Updates',
+  title: 'Card Rummy Latest Version – New Features 2026',
   description: 'Card Rummy latest version V1.230: New features, improvements, UI updates, and 2026 changes. What\'s new and why you should update now.',
   keywords: [
     'Card Rummy latest version',

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: '3Patti Room vs Card Rummy: Which Game Is Better for Earning Real Cash? 2026',
+  title: '3Patti Room vs Card Rummy – Which Is Better?',
   description: 'Comprehensive comparison: 3Patti Room vs Card Rummy. Features, bonuses, withdrawal speed & real earning potential for Pakistan players in 2026!',
   keywords: [
     '3Patti Room vs Card Rummy',

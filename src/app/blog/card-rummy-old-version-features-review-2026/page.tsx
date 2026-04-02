@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Card Rummy Old Version: Features Review and Details 2026',
+  title: 'Card Rummy Old Version – Features & Review 2026',
   description: 'Card Rummy old version review: Classic features, legacy games, UI comparison, and why some players prefer older versions. Complete features & details for 2026.',
   keywords: [
     'Card Rummy old version',

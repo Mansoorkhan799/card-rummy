@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Card Rummy Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide 2026',
+  title: 'Card Rummy Bonuses & VIP Rewards Guide 2026',
   description: 'Complete Card Rummy bonuses guide 2026: Welcome bonus, recharge rebate, VIP levels, referral commission, daily tasks & step-by-step guide to maximize rewards in Pakistan!',
   keywords: [
     'Card Rummy bonuses',

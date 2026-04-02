@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Card Rummy App Review 2026: Features, Pros, Cons, and Payout Speed',
+  title: 'Card Rummy App Review 2026 – Pros & Cons',
   description: 'Complete Card Rummy app review 2026: Honest analysis of features, games, bonuses, withdrawal speed, pros & cons. Is Card Rummy worth it for Pakistan players?',
   keywords: [
     'Card Rummy review',

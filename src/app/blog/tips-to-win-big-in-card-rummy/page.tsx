@@ -5,7 +5,7 @@ import BlogPostSchema from '@/components/BlogPostSchema';
 import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
 
 export const metadata: Metadata = {
-  title: 'Tips to Win Big in Card Rummy - Expert Strategies & Tricks 2026',
+  title: 'Card Rummy Tips: Expert Strategies to Win Big',
   description: 'Discover expert strategies and proven tips to maximize your winnings in Card Rummy. Learn how to win big in Teen Patti, Rummy, and other card games.',
   keywords: ['Card Rummy tips', 'win big Card Rummy', 'Teen Patti strategies', 'Rummy tricks', 'Card Rummy strategies', 'earn money Card Rummy'],
   robots: {

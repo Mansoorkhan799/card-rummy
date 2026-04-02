@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Responsible Gaming Guide: How to Enjoy Card Rummy Without Addiction or Big Losses 2026',
+  title: 'Card Rummy Responsible Gaming Guide 2026',
   description: 'Complete responsible gaming guide for Card Rummy 2026: How to play safely, avoid addiction, set limits, recognize warning signs, and enjoy gaming without financial harm in Pakistan.',
   keywords: [
     'responsible gaming Card Rummy',

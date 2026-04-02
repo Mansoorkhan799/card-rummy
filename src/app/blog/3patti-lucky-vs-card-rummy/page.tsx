@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: '3Patti Lucky vs Card Rummy: Which Game Is Better for Earning Real Cash? 2026',
+  title: '3Patti Lucky vs Card Rummy – Which Is Better?',
   description: 'Detailed comparison: 3Patti Lucky vs Card Rummy. Games, bonuses, payout speed & earning analysis. Find the best real money app for Pakistan players in 2026!',
   keywords: [
     '3Patti Lucky vs Card Rummy',

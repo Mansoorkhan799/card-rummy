@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'How to Use Card Rummy App in Pakistan: Complete Beginner\'s Guide 2026',
+  title: 'How to Use Card Rummy App in Pakistan 2026',
   description: 'Complete Card Rummy app guide 2026 for Pakistan: Download, registration, deposit, withdrawal, gameplay & earning tips. Step-by-step tutorial for beginners!',
   keywords: [
     'how to use Card Rummy',

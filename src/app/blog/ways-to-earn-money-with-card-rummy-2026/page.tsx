@@ -3,7 +3,7 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Ways to Earn Money with Card Rummy in 2026: Bonuses & Strategies',
+  title: 'Ways to Earn Money with Card Rummy 2026',
   description: 'Complete guide to earning with Card Rummy 2026: Weekly bonuses, daily bonus, sports bonus, progress bonus, daily referee & more. Maximize your income!',
   keywords: [
     'earn money Card Rummy',

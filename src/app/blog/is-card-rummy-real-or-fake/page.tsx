@@ -5,7 +5,7 @@ import BlogPostSchema from '@/components/BlogPostSchema';
 import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
 
 export const metadata: Metadata = {
-  title: 'Is Card Rummy Real or Fake to Earn Money? - Complete Guide 2026',
+  title: 'Is Card Rummy Real or Fake? Complete Guide',
   description: 'Discover if Card Rummy app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps. Complete guide for Pakistani players.',
   keywords: [
     'Card Rummy real or fake',
