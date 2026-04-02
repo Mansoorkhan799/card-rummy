@@ -96,7 +96,19 @@ export default function Home() {
         "isPartOf": { "@id": "https://cardrummyapp.com.pk/#website" },
         "speakable": {
           "@type": "SpeakableSpecification",
-          "cssSelector": ["#what-is-card-rummy"]
+          "cssSelector": [
+            "#what-is-card-rummy",
+            "#why-card-rummy-popular",
+            "#how-to-start",
+            "#download",
+            "#card-rummy-features",
+            "#card-rummy-games",
+            "#card-rummy-bonuses",
+            "#register-login",
+            "#deposit-withdraw",
+            "#safety-security",
+            "#faq"
+          ]
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
@@ -432,7 +444,7 @@ export default function Home() {
       </section>
 
       {/* Overview Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="overview" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Overview</h2>
           <div className="space-y-6">
@@ -460,7 +472,7 @@ export default function Home() {
       </section>
 
       {/* Why Card Rummy Popular Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="why-card-rummy-popular" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Why Card Rummy Game so Popular?</h2>
           <div className="space-y-6">
@@ -476,7 +488,7 @@ export default function Home() {
       </section>
 
       {/* How to Start Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="how-to-start" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">How Can We Start with Card Rummy?</h2>
           <div className="space-y-4">
@@ -634,7 +646,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="card-rummy-features" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-accent">Top Features of Card Rummy</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -683,7 +695,7 @@ export default function Home() {
       </section>
 
       {/* Available Games Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="card-rummy-games" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Best Games to Play on Card Rummy</h2>
           
@@ -780,7 +792,7 @@ export default function Home() {
       </section>
 
       {/* Bonuses Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="card-rummy-bonuses" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Benefits for New Players by Joining Card Rummy</h2>
         
@@ -931,7 +943,7 @@ export default function Home() {
       </section>
 
       {/* Account Creation */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="register-login" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How to Register & Login on Card Rummy?</h2>
           
@@ -965,7 +977,7 @@ export default function Home() {
       </section>
 
       {/* Payment Methods Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="deposit-withdraw" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Ways to Deposit & Withdraw Money in Card Rummy</h2>
           
@@ -1100,7 +1112,7 @@ export default function Home() {
       </section>
 
       {/* About Safety Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="safety-security" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">About the Safety & Security of the Card Rummy</h2>
           <div className="space-y-4">
@@ -1135,7 +1147,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="faq" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
         <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Frequently Asked Questions</h2>
         <div className="space-y-4">
