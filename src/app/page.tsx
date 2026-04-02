@@ -94,6 +94,10 @@ export default function Home() {
         "name": "Card Rummy Pakistan v1.230 Free Download Official APK",
         "description": "Card Rummy 2026 - Pakistan's #1 card game platform. Download Card Rummy APK, play Teen Patti, Rummy, Dragon vs Tiger & win real cash.",
         "isPartOf": { "@id": "https://cardrummyapp.com.pk/#website" },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["#what-is-card-rummy"]
+        },
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://cardrummyapp.com.pk/card-rummy.webp",
@@ -158,7 +162,7 @@ export default function Home() {
         "downloadUrl": "https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689",
         "softwareVersion": "V1.230",
         "fileSize": "49MB",
-        "description": "Play Teen Patti, Rummy, Dragon Tiger and other card games. Earn real money with JazzCash & EasyPaisa withdrawals.",
+        "description": "Card Rummy is Pakistan's most popular online card gaming app where players earn real money by playing Teen Patti, Rummy, Dragon vs Tiger, Andar Bahar, and more. It supports fast deposits and withdrawals via JazzCash and EasyPaisa, offers daily bonuses and VIP rewards, and has over 500,000 active players across Pakistan.",
         "screenshot": [
           "https://cardrummyapp.com.pk/card-rummy.webp",
           "https://cardrummyapp.com.pk/card-rummy-logo.webp",
@@ -440,7 +444,7 @@ export default function Home() {
       </section>
 
       {/* What is Card Rummy Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="what-is-card-rummy" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">What is Card Rummy?</h2>
           <div className="space-y-6">
