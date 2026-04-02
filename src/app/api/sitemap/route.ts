@@ -163,7 +163,73 @@ export async function GET() {
       lastMod: new Date().toISOString(),
       changeFreq: 'monthly',
       priority: 0.8
-    }
+    },
+    {
+      url: '/blog/3patti-room-vs-card-rummy',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/how-to-use-card-rummy-app-pakistan-guide-2026',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/3patti-blue-vs-card-rummy',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/dragon-vs-tiger-andar-bahar-high-payout-games',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/3patti-lucky-vs-card-rummy',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/card-rummy-tips-10-smart-tricks',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/3patti-gold-vs-card-rummy',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/card-rummy-app-review-2026',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/card-rummy-bonuses-vip-guide',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/responsible-gaming-guide-card-rummy',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/is-card-rummy-safe-legal-pakistan',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
   ];
 
   // Only include existing pages

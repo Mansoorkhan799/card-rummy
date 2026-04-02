@@ -1,6 +1,15 @@
 import type { Metadata, Viewport } from "next";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-poppins",
+  preload: true,
+});
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DeferredStyles from "@/components/DeferredStyles";
@@ -134,7 +143,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={poppins.variable} suppressHydrationWarning>
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -143,8 +152,6 @@ export default function RootLayout({
         <link rel="icon" href="/card-rummy-logo.webp" type="image/webp" sizes="192x192" />
         <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="1024x1024" />
         <link rel="apple-touch-icon" href="/card-rummy-logo.webp" sizes="180x180" />
-        <meta property="og:image" content="https://cardrummyapp.com.pk/card-rummy.webp" />
-        <meta property="og:image:alt" content="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger." />
         
         {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
@@ -179,7 +186,7 @@ export default function RootLayout({
         )}
       </head>
       <body
-        className="antialiased bg-primary text-white min-h-screen flex flex-col"
+        className={`${poppins.className} antialiased bg-primary text-white min-h-screen flex flex-col`}
         style={{
           backgroundImage: "radial-gradient(circle at 10% 20%, rgba(10, 16, 41, 0.4) 0%, rgba(6, 9, 31, 0.01) 90%)",
           backgroundAttachment: "fixed",

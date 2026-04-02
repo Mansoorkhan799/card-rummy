@@ -29,11 +29,6 @@ footer {
   contain: layout;
 }
 
-/* Optimize font loading to prevent layout shift */
-body {
-  font-display: swap;
-}
-
 /* Prevent font-related layout shifts */
 * {
   font-family: inherit;

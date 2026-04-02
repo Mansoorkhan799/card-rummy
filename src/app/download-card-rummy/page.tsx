@@ -92,11 +92,24 @@ export default function DownloadPage() {
   };
 
   return (
-    <>
+    <article>
       {/* Schema.org JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cardrummyapp.com.pk" },
+              { "@type": "ListItem", "position": 2, "name": "Download Card Rummy", "item": "https://cardrummyapp.com.pk/download-card-rummy" }
+            ]
+          })
+        }}
       />
       
       {/* Hero Section */}
@@ -302,7 +315,7 @@ export default function DownloadPage() {
           ← Back to Home
         </Link>
       </section>
-    </>
+    </article>
   );
 }
 

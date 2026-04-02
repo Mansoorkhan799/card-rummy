@@ -39,7 +39,7 @@ export default function CreateAccountLogin() {
         slug="create-card-rummy-account-and-login"
         datePublished="2026-01-20"
       />
-      <div className="min-h-screen bg-[#060A20]">
+      <article className="min-h-screen bg-[#060A20]">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">
             <Link href="/blog" className="text-accent hover:text-accent font-semibold inline-flex items-center">
@@ -242,7 +242,7 @@ export default function CreateAccountLogin() {
             </div>
           </div>
         </div>
-      </div>
+      </article>
 
       <Script
         id="blog-post-schema"

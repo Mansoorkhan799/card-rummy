@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Column */}
           <div>
-            <h3 className="text-xl font-bold text-accent mb-4">Card Rummy</h3>
+            <h2 className="text-xl font-bold text-accent mb-4">Card Rummy</h2>
             <p className="text-sm text-gray-300 mb-4">
               Card Rummy is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, Dragon vs Tiger and many other exciting games. Earn real cash with JazzCash & EasyPaisa payments.
             </p>
@@ -22,7 +22,7 @@ export default function Footer() {
           
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-accent">Quick Links</h3>
+            <h2 className="text-lg font-semibold mb-4 text-accent">Quick Links</h2>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/" className="text-gray-300 hover:text-accent transition-colors">
@@ -59,7 +59,7 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-accent">Resources</h3>
+            <h2 className="text-lg font-semibold mb-4 text-accent">Resources</h2>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/deposit-money-in-card-rummy" className="text-gray-300 hover:text-accent transition-colors">
@@ -96,7 +96,7 @@ export default function Footer() {
           
           {/* Download */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-accent">Download App</h3>
+            <h2 className="text-lg font-semibold mb-4 text-accent">Download App</h2>
             <p className="text-sm text-gray-300 mb-4">
               Download Card Rummy to enjoy the best card gaming experience and earn real cash rewards on your mobile device.
             </p>
@@ -104,6 +104,7 @@ export default function Footer() {
               href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
               target="_blank" 
               rel="noopener noreferrer" 
+              aria-label="Download Card Rummy app for Android"
               className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
             >
               <span>DOWNLOAD NOW</span>

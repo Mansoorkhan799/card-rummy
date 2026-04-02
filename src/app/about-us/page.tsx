@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-primary py-12 px-4">
+    <article className="min-h-screen bg-primary py-12 px-4">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
@@ -150,6 +150,19 @@ export default function AboutPage() {
           })
         }}
       />
-    </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cardrummyapp.com.pk" },
+              { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://cardrummyapp.com.pk/about-us" }
+            ]
+          })
+        }}
+      />
+    </article>
   );
 } 

@@ -79,11 +79,24 @@ export default function CardRummyForPCPage() {
   };
 
   return (
-    <>
+    <article>
       {/* Schema.org JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cardrummyapp.com.pk" },
+              { "@type": "ListItem", "position": 2, "name": "Card Rummy for PC", "item": "https://cardrummyapp.com.pk/card-rummy-for-pc" }
+            ]
+          })
+        }}
       />
       
       {/* Hero Section */}
@@ -477,7 +490,7 @@ export default function CardRummyForPCPage() {
           ← Back to Home
         </Link>
       </section>
-    </>
+    </article>
   );
 }
 

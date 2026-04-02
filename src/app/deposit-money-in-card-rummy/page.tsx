@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function DepositMoneyPage() {
   return (
-    <main className="min-h-screen bg-primary" itemScope itemType="https://schema.org/Article">
+    <article className="min-h-screen bg-primary" itemScope itemType="https://schema.org/Article">
       {/* Hero Section */}
       <section className="relative py-12 md:py-20 bg-secondary border-b border-gray-800">
         <div className="container mx-auto px-4">
@@ -350,7 +350,20 @@ export default function DepositMoneyPage() {
           }).replace(/</g, "\\u003c")
         }}
       />
-    </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cardrummyapp.com.pk" },
+              { "@type": "ListItem", "position": 2, "name": "Deposit Money in Card Rummy", "item": "https://cardrummyapp.com.pk/deposit-money-in-card-rummy" }
+            ]
+          })
+        }}
+      />
+    </article>
   );
 }
 
