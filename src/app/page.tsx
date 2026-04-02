@@ -878,12 +878,12 @@ export default function Home() {
       {/* Download Instructions */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Download Card Rummy APK Latest Version For Android</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How to Download Card Rummy APK Latest Version For Android?</h2>
           <p className="text-gray-300 mb-4">To download the latest version of Card Rummy APK for Android devices, follow the given steps:</p>
           <div className="mb-8">
           <ol className="list-decimal pl-5 space-y-3 text-gray-300">
             <li>First, you open the browser on your Android device and click on the search bar.</li>
-            <li>In the search bar, type the latest version of 3Card Rummy and visit the trusted website.</li>
+            <li>In the search bar, type the latest version of Card Rummy and visit the trusted website.</li>
             <li>On the trusted website, click on the Download button to start downloading.</li>
             <li>Now wait a few seconds to complete the downloading process.</li>
             <li>Once complete, that file will be saved in the Download Folder of the device.</li>
