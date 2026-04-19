@@ -372,12 +372,12 @@ export default function Home() {
               src="/card-rummy.webp"
               alt="Card Rummy – Pakistan's #1 Card Game App"
               title="Card Rummy – Download & Play Teen Patti, Rummy, Dragon vs Tiger"
-              width={420}
-              height={420}
+              width={320}
+              height={320}
               className="object-contain drop-shadow-2xl w-[260px] h-[260px] md:w-[320px] md:h-[320px]"
               priority={true}
               fetchPriority="high"
-              quality={90}
+              quality={80}
               sizes="(max-width: 768px) 260px, 320px"
               itemProp="image"
             />

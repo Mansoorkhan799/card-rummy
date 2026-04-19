@@ -1,19 +1,24 @@
 'use client';
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
-// Throttle scroll handler to reduce main-thread work and improve INP
-function useThrottledScroll(callback: () => void, delay: number) {
-  const lastRan = useRef(Date.now());
+export default function ScrollToTop() {
+  const [isVisible, setIsVisible] = useState(false);
   const rafId = useRef<number | null>(null);
+  const lastRan = useRef(0);
 
   useEffect(() => {
     const handler = () => {
+      // Read scrollY synchronously in the scroll event (not in rAF) to avoid forced reflow
+      const scrollY = window.scrollY;
       if (rafId.current) return;
       rafId.current = requestAnimationFrame(() => {
         const now = Date.now();
-        if (now - lastRan.current >= delay) {
-          callback();
+        if (now - lastRan.current >= 150) {
+          setIsVisible((prev) => {
+            const next = scrollY > 300;
+            return prev !== next ? next : prev;
+          });
           lastRan.current = now;
         }
         rafId.current = null;
@@ -24,18 +29,7 @@ function useThrottledScroll(callback: () => void, delay: number) {
       window.removeEventListener('scroll', handler);
       if (rafId.current) cancelAnimationFrame(rafId.current);
     };
-  }, [callback, delay]);
-}
-
-export default function ScrollToTop() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const toggleVisibility = useCallback(() => {
-    const visible = window.pageYOffset > 300;
-    setIsVisible((prev) => (prev !== visible ? visible : prev));
   }, []);
-
-  useThrottledScroll(toggleVisibility, 150);
 
   // Scroll to top smoothly
   const scrollToTop = () => {
