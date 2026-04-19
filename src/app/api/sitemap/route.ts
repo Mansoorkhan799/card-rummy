@@ -165,6 +165,12 @@ export async function GET() {
       priority: 0.8
     },
     {
+      url: '/blog/card-rummy-referral-program',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
       url: '/blog/3patti-room-vs-card-rummy',
       lastMod: new Date().toISOString(),
       changeFreq: 'monthly',

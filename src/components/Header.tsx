@@ -2,9 +2,28 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import MobileNavigation from './MobileNavigation';
 
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/download-card-rummy', label: 'Download' },
+  { href: '/deposit-money-in-card-rummy', label: 'Deposit' },
+  { href: '/withdraw-money-from-card-rummy', label: 'Withdraw' },
+  { href: '/card-rummy-for-pc', label: 'PC Version' },
+  { href: '/about-us', label: 'About Us' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/contact-us', label: 'Contact Us' },
+];
+
 export default function Header() {
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/';
+    return pathname === href || pathname.startsWith(href + '/');
+  };
+
   return (
     <header className="bg-primary py-3 px-4 md:px-8 sticky top-0 z-30 border-b border-gray-800">
       <div className="container mx-auto flex justify-between items-center">
@@ -28,30 +47,24 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          <Link href="/" className="text-white hover:text-accent font-medium transition-colors">
-            Home
-          </Link>
-          <Link href="/download-card-rummy" className="text-white hover:text-accent font-medium transition-colors">
-            Download
-          </Link>
-          <Link href="/deposit-money-in-card-rummy" className="text-white hover:text-accent font-medium transition-colors">
-            Deposit
-          </Link>
-          <Link href="/withdraw-money-from-card-rummy" className="text-white hover:text-accent font-medium transition-colors">
-            Withdraw
-          </Link>
-          <Link href="/card-rummy-for-pc" className="text-white hover:text-accent font-medium transition-colors">
-            PC Version
-          </Link>
-          <Link href="/about-us" className="text-white hover:text-accent font-medium transition-colors">
-            About Us
-          </Link>
-          <Link href="/blog" className="text-white hover:text-accent font-medium transition-colors">
-            Blog
-          </Link>
-          <Link href="/contact-us" className="text-white hover:text-accent font-medium transition-colors">
-            Contact Us
-          </Link>
+          {navLinks.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className={`relative font-medium transition-colors pb-1 group ${
+                isActive(href)
+                  ? 'text-accent'
+                  : 'text-white hover:text-accent'
+              }`}
+            >
+              {label}
+              <span
+                className={`absolute bottom-0 left-0 h-0.5 bg-accent rounded-full transition-all duration-300 ${
+                  isActive(href) ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}
+              />
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile Navigation */}

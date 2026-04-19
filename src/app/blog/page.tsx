@@ -292,6 +292,20 @@ export default function Blog() {
             Read More →
           </Link>
         </div>
+
+        {/* Referral Program */}
+        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
+          <h2 className="text-2xl font-bold mb-4 text-white">Card Rummy Referral Program: Earn More by Inviting Friends and Family</h2>
+          <p className="text-gray-300 mb-4">How referral codes work, signup steps, rewards for you and your invites, and tips to earn more—aligned with Pakistan players and official app features.</p>
+          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+            <span>📅 March 2026</span>
+            <span>•</span>
+            <span>12 min read</span>
+          </div>
+          <Link href="/blog/card-rummy-referral-program" className="text-accent hover:underline font-semibold">
+            Read More →
+          </Link>
+        </div>
       </div>
     </div>
   );
