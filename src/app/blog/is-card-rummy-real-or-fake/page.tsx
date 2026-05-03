@@ -321,7 +321,7 @@ export default function CardRummyRealOrFakePage() {
             {/* CTA Button */}
             <div className="mt-6 text-center">
               <a 
-                href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
+                href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
@@ -390,7 +390,7 @@ export default function CardRummyRealOrFakePage() {
           <div className="bg-secondary rounded-xl p-6 md:p-8">
             <h3 className="text-2xl font-bold mb-6 text-[#FFA500]">Related Articles</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="bg-[#0A1029] p-4 rounded-lg hover:bg-[#0A1029]/70 transition-colors">
+              <a href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272" target="_blank" rel="noopener noreferrer" className="bg-[#0A1029] p-4 rounded-lg hover:bg-[#0A1029]/70 transition-colors">
                 <h4 className="text-white font-semibold mb-2">📥 Download Card Rummy APK</h4>
                 <p className="text-gray-400 text-sm">Get the latest version of Card Rummy for Android</p>
               </a>

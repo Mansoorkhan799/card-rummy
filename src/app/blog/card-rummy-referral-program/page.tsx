@@ -259,7 +259,7 @@ export default function BlogCardRummyReferralProgram() {
           <p className="text-gray-300 mb-6">
             The Card Rummy referral program is a practical way to earn more by inviting friends and family while they discover a trusted card-gaming app in Pakistan. Use your code responsibly, combine it with other bonuses, and always play within your budget.{' '}
             <Link
-              href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+              href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#FFA500] hover:underline font-semibold"

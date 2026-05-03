@@ -171,7 +171,7 @@ export default function Home() {
           "price": "0",
           "priceCurrency": "PKR"
         },
-        "downloadUrl": "https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689",
+        "downloadUrl": "https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272",
         "softwareVersion": "V1.230",
         "fileSize": "49MB",
         "description": "Card Rummy is Pakistan's most popular online card gaming app where players earn real money by playing Teen Patti, Rummy, Dragon vs Tiger, Andar Bahar, and more. It supports fast deposits and withdrawals via JazzCash and EasyPaisa, offers daily bonuses and VIP rewards, and has over 500,000 active players across Pakistan.",
@@ -314,7 +314,7 @@ export default function Home() {
             {/* Download Button */}
             <div className="flex justify-center my-8">
               <a 
-                href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
+                href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group"
@@ -494,7 +494,7 @@ export default function Home() {
           <div className="space-y-4">
             <p className="text-gray-300 leading-relaxed">To start the CardRummy game, follow the given steps:</p>
             <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-              <li>Firstly, open the official website of 3 Patti Card Rummy and <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">download the APK file</a> to your device.</li>
+              <li>Firstly, open the official website of 3 Patti Card Rummy and <a href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">download the APK file</a> to your device.</li>
               <li>Once downloaded then click on the downloaded APK file to start the installation by allowing the Unknown Sources.</li>
               <li>Once installation is complete, click on it to open the 3 Patti Card Rummy app.</li>
               <li>When the app opens then log in with your mobile number or just play as a guest.</li>
@@ -926,7 +926,7 @@ export default function Home() {
 
         <div className="flex justify-center">
           <a 
-            href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
+            href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
             target="_blank"
             rel="noopener noreferrer"
             className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-4 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
