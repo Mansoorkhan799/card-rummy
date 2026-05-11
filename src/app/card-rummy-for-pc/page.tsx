@@ -111,7 +111,7 @@ export default function CardRummyForPCPage() {
             Free 2026
           </h2>
           <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
-            The <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> app is a popular platform where you can enjoy playing card games anytime. <a href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Download Card Rummy</a> to get started on mobile, or follow this guide to play on PC. The games offer a wide range of games like Classic Teen Patti, Andar Bahar, Dragon Tiger, Rummy, poker, and other mini games you can play to earn real cash. The game also provides daily bonuses to boost your balance.
+            The <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> app is a popular platform where you can enjoy playing card games anytime. <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Download Card Rummy</a> to get started on mobile, or follow this guide to play on PC. The games offer a wide range of games like Classic Teen Patti, Andar Bahar, Dragon Tiger, Rummy, poker, and other mini games you can play to earn real cash. The game also provides daily bonuses to boost your balance.
           </p>
         </div>
 
@@ -254,7 +254,7 @@ export default function CardRummyForPCPage() {
           {/* Download Button */}
           <div className="flex justify-center mt-10">
             <a 
-              href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
+              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
@@ -469,7 +469,7 @@ export default function CardRummyForPCPage() {
             Download Card Rummy and install it using your favorite emulator!
           </p>
           <a 
-            href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
+            href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-[#0ea5e9] hover:bg-gray-100 font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
