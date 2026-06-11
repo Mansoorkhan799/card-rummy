@@ -323,7 +323,7 @@ export default function Blog3PattiGoldVsCardRummy() {
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Download Card Rummy APK v1.230
+              Download Card Rummy APK v1.231
             </a>
           </div>
         </div>

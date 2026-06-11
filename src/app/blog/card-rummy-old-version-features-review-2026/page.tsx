@@ -101,7 +101,7 @@ export default function BlogCardRummyOldVersionFeaturesReview() {
           <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
             <p className="text-white font-semibold mb-2">⚠️ Recommendation</p>
             <p className="text-gray-300">
-              We recommend using the latest Card Rummy version (V1.230) for security, new features, and best support. Old versions may stop working when the server requires updates.
+              We recommend using the latest Card Rummy version (V1.231) for security, new features, and best support. Old versions may stop working when the server requires updates.
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export default function BlogCardRummyOldVersionFeaturesReview() {
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Download Card Rummy Latest Version v1.230
+              Download Card Rummy Latest Version v1.231
             </a>
           </div>
         </div>

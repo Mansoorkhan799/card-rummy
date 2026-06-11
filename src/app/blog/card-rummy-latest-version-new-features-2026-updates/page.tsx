@@ -4,10 +4,10 @@ import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
   title: 'Card Rummy Latest Version – New Features 2026',
-  description: 'Card Rummy latest version V1.230: New features, improvements, UI updates, and 2026 changes. What\'s new and why you should update now.',
+  description: 'Card Rummy latest version V1.231: New features, improvements, UI updates, and 2026 changes. What\'s new and why you should update now.',
   keywords: [
     'Card Rummy latest version',
-    'Card Rummy V1.230',
+    'Card Rummy V1.231',
     'Card Rummy new features 2026',
     'Card Rummy update',
     'Card Rummy 2026 updates',
@@ -30,7 +30,7 @@ export default function BlogCardRummyLatestVersionNewFeatures() {
     <main className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Card Rummy Latest Version: New Features and 2026 Updates"
-        description="Card Rummy latest version V1.230: New features, improvements, UI updates, and 2026 changes. What's new and why you should update now."
+        description="Card Rummy latest version V1.231: New features, improvements, UI updates, and 2026 changes. What's new and why you should update now."
         slug="card-rummy-latest-version-new-features-2026-updates"
         datePublished="2026-03-02"
       />
@@ -56,17 +56,17 @@ export default function BlogCardRummyLatestVersionNewFeatures() {
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> V1.230 brings new features, smoother performance, and 2026 improvements. Here&apos;s everything new in the latest version and why you should update now.
+            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> V1.231 brings new features, smoother performance, and 2026 improvements. Here&apos;s everything new in the latest version and why you should update now.
           </p>
 
           <div className="bg-gradient-to-r from-purple-800/50 to-orange-600/50 rounded-lg p-8 my-8">
-            <p className="text-white text-2xl font-bold mb-4">Card Rummy V1.230 – Latest 2026</p>
+            <p className="text-white text-2xl font-bold mb-4">Card Rummy V1.231 – Latest 2026</p>
             <p className="text-gray-300 text-lg">
               The latest version includes enhanced bonuses (weekly, daily, sports, progress, daily referee), improved UI, faster withdrawal processing, and better security.
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">What&apos;s New in V1.230</h2>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">What&apos;s New in V1.231</h2>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">1. Enhanced Bonus System</h3>
           <p className="text-gray-300 mb-4">
@@ -115,7 +115,7 @@ export default function BlogCardRummyLatestVersionNewFeatures() {
           <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
             <li>Visit the official <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> website</li>
             <li>Go to the <a href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272" target="_blank" rel="noopener noreferrer" className="text-[#FFA500] hover:underline font-semibold">download page</a></li>
-            <li>Download the latest APK (V1.230)</li>
+            <li>Download the latest APK (V1.231)</li>
             <li>Install over your existing app (your account and balance stay intact)</li>
             <li>Login and enjoy new features!</li>
           </ol>
@@ -123,7 +123,7 @@ export default function BlogCardRummyLatestVersionNewFeatures() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy V1.230 delivers the best experience with new bonuses, improved UI, and better security. Update today to get the full 2026 feature set.
+            Card Rummy V1.231 delivers the best experience with new bonuses, improved UI, and better security. Update today to get the full 2026 feature set.
           </p>
 
           <div className="mt-12 text-center">
@@ -133,7 +133,7 @@ export default function BlogCardRummyLatestVersionNewFeatures() {
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Download Card Rummy V1.230 - Latest 2026
+              Download Card Rummy V1.231 - Latest 2026
             </a>
           </div>
         </div>
