@@ -3,6 +3,7 @@
 import { useState, useEffect, useTransition } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useMobileMenu } from './MobileMenuProvider';
 
 type NavItem = {
@@ -136,8 +137,14 @@ function MenuButton({ onClick, isOpen }: { onClick: () => void; isOpen?: boolean
 
 export default function MobileNavigation() {
   const { isOpen, setIsOpen } = useMobileMenu();
+  const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
   const [, startTransition] = useTransition();
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/';
+    return pathname === href || pathname.startsWith(href + '/');
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -208,7 +215,7 @@ export default function MobileNavigation() {
 
           {/* Nav sections */}
           <div className="relative flex-1 overflow-y-auto">
-            <div className="absolute right-0 top-0 bottom-0 w-1 bg-[#00C853]" aria-hidden="true" />
+            <div className="absolute right-0 top-0 bottom-0 w-1 bg-[#0BA5E9]" aria-hidden="true" />
 
             <nav className="px-5 py-2 pb-6">
               {navSections.map((section) => (
@@ -217,21 +224,32 @@ export default function MobileNavigation() {
                     {section.title}
                   </p>
                   <ul className="space-y-0.5">
-                    {section.items.map((item) => (
+                    {section.items.map((item) => {
+                      const active = isActive(item.href);
+                      return (
                       <li key={item.href}>
                         <Link
                           href={item.href}
                           onClick={closeMenu}
-                          className="flex items-center gap-4 px-1 py-3.5 text-white hover:text-[#00C853] transition-colors group"
+                          className={`flex items-center gap-4 px-1 py-3.5 transition-colors group ${
+                            active
+                              ? 'text-accent'
+                              : 'text-white hover:text-accent'
+                          }`}
                         >
-                          <span className="text-gray-400 group-hover:text-[#00C853] transition-colors flex-shrink-0">
+                          <span className={`transition-colors flex-shrink-0 ${
+                            active
+                              ? 'text-accent'
+                              : 'text-gray-400 group-hover:text-accent'
+                          }`}>
                             {item.icon}
                           </span>
                           <span className="flex-1 text-[15px] font-medium">{item.label}</span>
                           <ChevronRight />
                         </Link>
                       </li>
-                    ))}
+                      );
+                    })}
                   </ul>
                 </div>
               ))}
@@ -239,17 +257,22 @@ export default function MobileNavigation() {
           </div>
 
           {/* Footer CTA */}
-          <div className="px-5 pt-4 pb-8 border-t border-gray-800/80">
-            <Link
-              href="/download-card-rummy"
+          <div className="px-5 pt-4 pb-8 border-t border-gray-800/80 flex flex-col items-center">
+            <a
+              href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={closeMenu}
-              className="flex items-center justify-center gap-2.5 w-full py-4 rounded-2xl bg-[#00C853] hover:bg-[#00b34a] text-white font-bold text-sm tracking-wide transition-colors"
+              aria-label="Download Card Rummy app for Android"
+              className="download-btn inline-flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0BA5E9] bg-transparent hover:bg-[#0BA5E9]/10 transition-all group"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-              </svg>
-              Download Free APK
-            </Link>
+              <span>DOWNLOAD NOW</span>
+              <div className="download-icon ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+              </div>
+            </a>
             <p className="text-center text-gray-500 text-xs mt-3">
               49MB · Android 5.0+ · V1.231 (2026 Update)
             </p>
