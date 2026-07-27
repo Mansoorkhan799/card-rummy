@@ -101,7 +101,7 @@ export default function Footer() {
               Download Card Rummy to enjoy the best card gaming experience and earn real cash rewards on your mobile device.
             </p>
             <a 
-              href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
+              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label="Download Card Rummy app for Android"

@@ -179,7 +179,7 @@ export default function MobileNavigation() {
       <MenuButton onClick={toggleMenu} isOpen={isOpen} />
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-[#0d0d0d]">
+        <div className="fixed inset-0 z-50 flex flex-col bg-[#080A21]">
           {/* Header */}
           <div className="flex justify-between items-center px-5 py-4 border-b border-gray-800/80">
             <Link href="/" className="flex items-center gap-3" onClick={closeMenu}>
@@ -259,7 +259,7 @@ export default function MobileNavigation() {
           {/* Footer CTA */}
           <div className="px-5 pt-4 pb-8 border-t border-gray-800/80 flex flex-col items-center">
             <a
-              href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
+              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}

@@ -70,7 +70,7 @@ export default function CreateAccountLogin() {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold mb-3 text-white">Download the Card Rummy App</h3>
-                      <p className="text-gray-300 leading-relaxed">First, <a href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">download the Card Rummy app</a> from our official website. Once downloaded, install the app on your Android device.</p>
+                      <p className="text-gray-300 leading-relaxed">First, <a href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">download the Card Rummy app</a> from our official website. Once downloaded, install the app on your Android device.</p>
                     </div>
                   </div>
                   
@@ -231,7 +231,7 @@ export default function CreateAccountLogin() {
                 <p className="text-white text-lg mb-8 max-w-2xl mx-auto">Now that you know how to create an account and login to Card Rummy, you're ready to start playing Teen Patti, Rummy, and other card games to earn real money. Download the app today!</p>
                 
                 <Link 
-                  href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
+                  href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-accent font-bold py-4 px-8 rounded-full hover:bg-[#0A1029] transition-all shadow-2xl hover:shadow-3xl transform hover:scale-105"

@@ -403,7 +403,7 @@ export default function BlogCardRummyAppReview() {
 
           <div className="mt-12 text-center">
             <a 
-              href="https://pkcardrummy.com/?from_gameid=6191689&channelCode=6113272"
+              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
