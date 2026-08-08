@@ -13,16 +13,10 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/card-rummy-logo.webp",
-      "sizes": "512x512",
-      "type": "image/webp",
-      "purpose": "any maskable"
-    },
-    {
       "src": "/card-rummy.webp",
       "sizes": "512x512",
       "type": "image/webp",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ]
 } 

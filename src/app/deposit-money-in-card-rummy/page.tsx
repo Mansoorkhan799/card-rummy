@@ -40,17 +40,16 @@ export default function DepositMoneyPage() {
             </p>
             <CtaButton>Download & Deposit Now</CtaButton>
             <div className="mt-10 flex justify-center">
-              <div className="relative w-48 h-48 md:w-56 md:h-56">
-                <Image
-                  src="/card-rummy.webp"
-                  alt="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger."
-                  title="Card Rummy – Deposit Money via JazzCash & EasyPaisa"
-                  width={224}
-                  height={224}
-                  className="object-contain drop-shadow-2xl"
-                  priority
-                />
-              </div>
+              <Image
+                src="/card-rummy.webp"
+                alt="Card Rummy - Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger."
+                title="Card Rummy – Deposit Money via JazzCash & EasyPaisa"
+                width={320}
+                height={320}
+                className="object-contain drop-shadow-2xl w-[260px] h-[260px] md:w-[320px] md:h-[320px]"
+                priority
+                sizes="(max-width: 768px) 260px, 320px"
+              />
             </div>
           </div>
         </div>

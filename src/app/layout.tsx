@@ -81,7 +81,6 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', type: 'image/x-icon', sizes: '256x256' },
-      { url: '/card-rummy-logo.webp', type: 'image/webp', sizes: '512x512' },
       { url: '/card-rummy.webp', type: 'image/webp', sizes: '512x512' }
     ],
     apple: [
@@ -150,7 +149,6 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="256x256" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/card-rummy-logo.webp" type="image/webp" sizes="512x512" />
         <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="512x512" />
         <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
         

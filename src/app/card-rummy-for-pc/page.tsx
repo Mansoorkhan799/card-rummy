@@ -118,17 +118,16 @@ export default function CardRummyForPCPage() {
 
         {/* Logo Display */}
         <div className="flex justify-center mb-12">
-          <div className="relative" style={{ width: '280px', height: '280px', maxWidth: '100%' }}>
-            <Image
-              src="/card-rummy.webp"
-              alt="Card Rummy for PC – Play on Windows with Android Emulator"
-              title="Card Rummy for PC – Download & Play on Windows"
-              width={320}
-              height={320}
-              className="object-contain drop-shadow-2xl"
-              priority={true}
-            />
-          </div>
+          <Image
+            src="/card-rummy.webp"
+            alt="Card Rummy for PC – Play on Windows with Android Emulator"
+            title="Card Rummy for PC – Download & Play on Windows"
+            width={320}
+            height={320}
+            className="object-contain drop-shadow-2xl w-[260px] h-[260px] md:w-[320px] md:h-[320px]"
+            priority={true}
+            sizes="(max-width: 768px) 260px, 320px"
+          />
         </div>
       </section>
 

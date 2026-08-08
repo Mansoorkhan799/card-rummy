@@ -178,7 +178,6 @@ export default function Home() {
         "description": "Card Rummy is Pakistan's most popular online card gaming app where players earn real money by playing Teen Patti, Rummy, Dragon vs Tiger, Andar Bahar, and more. It supports fast deposits and withdrawals via JazzCash and EasyPaisa, offers daily bonuses and VIP rewards, and has over 500,000 active players across Pakistan.",
         "screenshot": [
           "https://cardrummyapp.com.pk/card-rummy.webp",
-          "https://cardrummyapp.com.pk/card-rummy-logo.webp",
           "https://cardrummyapp.com.pk/card-rummy-game-interface.webp",
           "https://cardrummyapp.com.pk/card-rummy-games.webp",
           "https://cardrummyapp.com.pk/card-rummy-earn-bonus.webp"

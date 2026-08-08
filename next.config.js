@@ -42,6 +42,26 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/og-image.webp',
+        destination: '/feature/og-image.webp',
+        permanent: true,
+      },
+      {
+        source: '/og-image-square.webp',
+        destination: '/feature/og-image-square.webp',
+        permanent: true,
+      },
+      {
+        source: '/twitter-card.webp',
+        destination: '/feature/twitter-card.webp',
+        permanent: true,
+      },
+      {
+        source: '/card-rummy-logo.webp',
+        destination: '/card-rummy.webp',
+        permanent: true,
+      },
     ];
   },
 
