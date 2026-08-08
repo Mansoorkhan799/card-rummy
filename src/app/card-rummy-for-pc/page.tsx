@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
+import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
   title: 'Card Rummy for PC Download Latest Version Free 2026',
@@ -45,7 +46,7 @@ export default function CardRummyForPCPage() {
     "@type": "TechArticle",
     "headline": "Card Rummy for PC Download Latest Version Free 2026",
     "description": "Complete guide to download and play Card Rummy on PC using Android emulator. Learn about system requirements, best emulators, and features.",
-    "image": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+    "image": "https://cardrummyapp.com.pk/card-rummy.webp",
     "author": {
       "@type": "Organization",
       "name": "Card Rummy",
@@ -56,7 +57,7 @@ export default function CardRummyForPCPage() {
       "name": "Card Rummy",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+        "url": "https://cardrummyapp.com.pk/card-rummy.webp",
         ...imageObjectLicensing,
         "creditText": "Card Rummy logo"
       }
@@ -102,7 +103,7 @@ export default function CardRummyForPCPage() {
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">
             <span className="text-[#FFA500]">Card Rummy for PC</span>
             <br />
             <span className="text-white">Download Latest Version</span>
@@ -253,19 +254,7 @@ export default function CardRummyForPCPage() {
 
           {/* Download Button */}
           <div className="flex justify-center mt-10">
-            <a 
-              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
-            >
-              <span className="text-lg">DOWNLOAD NOW</span>
-              <div className="ml-3 bg-[#f97316] rounded-full p-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-              </div>
-            </a>
+            <CtaButton>DOWNLOAD NOW</CtaButton>
           </div>
         </div>
       </section>
@@ -468,19 +457,7 @@ export default function CardRummyForPCPage() {
           <p className="text-xl text-white mb-8 opacity-90">
             Download Card Rummy and install it using your favorite emulator!
           </p>
-          <a 
-            href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-[#0ea5e9] hover:bg-gray-100 font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
-          >
-            <span className="text-lg">DOWNLOAD FOR PC</span>
-            <div className="ml-3 bg-[#f97316] rounded-full p-2">
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-              </svg>
-            </div>
-          </a>
+          <CtaButton>DOWNLOAD FOR PC</CtaButton>
         </div>
       </section>
 

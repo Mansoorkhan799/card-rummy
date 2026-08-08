@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
   title: 'Is Card Rummy Safe & Legal in Pakistan? 2026',
@@ -353,12 +354,7 @@ export default function BlogIsCardRummySafeLegal() {
           </div>
 
           <div className="mt-12 text-center">
-            <Link 
-              href="/blog/responsible-gaming-guide-card-rummy"
-              className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
-            >
-              Read Responsible Gaming Guide
-            </Link>
+            <CtaButton href="/blog/responsible-gaming-guide-card-rummy" icon="arrow">Read Responsible Gaming Guide</CtaButton>
           </div>
         </div>
 

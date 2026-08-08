@@ -80,12 +80,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon', sizes: 'any' },
-      { url: '/card-rummy-logo.webp', type: 'image/webp', sizes: '192x192' },
-      { url: '/card-rummy.webp', type: 'image/webp', sizes: '1024x1024' }
+      { url: '/favicon.ico', type: 'image/x-icon', sizes: '256x256' },
+      { url: '/card-rummy-logo.webp', type: 'image/webp', sizes: '512x512' },
+      { url: '/card-rummy.webp', type: 'image/webp', sizes: '512x512' }
     ],
     apple: [
-      { url: '/card-rummy-logo.webp', sizes: '180x180' }
+      { url: '/apple-icon.png', sizes: '180x180' }
     ],
     shortcut: [
       { url: '/favicon.ico', type: 'image/x-icon' }
@@ -107,14 +107,14 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://cardrummyapp.com.pk/feature/og-image.webp",
-        width: 1200,
-        height: 630,
+        width: 512,
+        height: 512,
         alt: "Card Rummy - Premier Card Gaming Platform",
       },
       {
         url: "https://cardrummyapp.com.pk/feature/og-image-square.webp",
-        width: 800,
-        height: 800,
+        width: 512,
+        height: 512,
         alt: "Card Rummy - Premier Card Gaming Platform",
       }
     ],
@@ -127,8 +127,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://cardrummyapp.com.pk/feature/twitter-card.webp",
-        width: 1200,
-        height: 600,
+        width: 512,
+        height: 512,
         alt: "Card Rummy - Premier Card Gaming Platform",
       }
     ],
@@ -148,11 +148,11 @@ export default function RootLayout({
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16 32x32" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="256x256" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/card-rummy-logo.webp" type="image/webp" sizes="192x192" />
-        <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="1024x1024" />
-        <link rel="apple-touch-icon" href="/card-rummy-logo.webp" sizes="180x180" />
+        <link rel="icon" href="/card-rummy-logo.webp" type="image/webp" sizes="512x512" />
+        <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
         
         {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
@@ -217,7 +217,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Card Rummy",
               "url": "https://cardrummyapp.com.pk",
-              "logo": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+              "logo": "https://cardrummyapp.com.pk/card-rummy.webp",
               "description": "Card Rummy is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, and many other card games with real cash rewards.",
               "sameAs": [
                 "https://facebook.com/cardrummy",

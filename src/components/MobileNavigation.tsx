@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useMobileMenu } from './MobileMenuProvider';
+import CtaButton from './CtaButton';
 
 type NavItem = {
   href: string;
@@ -258,21 +259,9 @@ export default function MobileNavigation() {
 
           {/* Footer CTA */}
           <div className="px-5 pt-4 pb-8 border-t border-gray-800/80 flex flex-col items-center">
-            <a
-              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-              aria-label="Download Card Rummy app for Android"
-              className="download-btn inline-flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0BA5E9] bg-transparent hover:bg-[#0BA5E9]/10 transition-all group"
-            >
-              <span>DOWNLOAD NOW</span>
-              <div className="download-icon ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-              </div>
-            </a>
+            <CtaButton onClick={closeMenu} ariaLabel="Download Card Rummy app for Android">
+              DOWNLOAD NOW
+            </CtaButton>
             <p className="text-center text-gray-500 text-xs mt-3">
               49MB · Android 5.0+ · V1.231 (2026 Update)
             </p>

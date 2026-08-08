@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
   title: 'Disclaimer - Card Rummy | Legal Information',
@@ -121,12 +122,7 @@ export default function Disclaimer() {
                 <p className="text-gray-300 mb-4">
                   If you have any questions about this Disclaimer, please feel free to contact us.
                 </p>
-                <Link 
-                  href="/contact-us" 
-                  className="inline-block bg-accent hover:bg-accent/90 text-primary font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                >
-                  Contact Us
-                </Link>
+                <CtaButton href="/contact-us" icon="arrow">Contact Us</CtaButton>
               </div>
             </div>
           </div>

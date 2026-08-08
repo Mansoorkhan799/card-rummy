@@ -24,7 +24,7 @@ export default function BlogPostSchema({
   slug,
   datePublished,
   dateModified,
-  image = `${BASE}/card-rummy-logo.webp`,
+  image = `${BASE}/card-rummy.webp`,
   breadcrumbOnly = false,
   articleBody,
 }: BlogPostSchemaProps) {
@@ -52,7 +52,7 @@ export default function BlogPostSchema({
       name: "Card Rummy",
       logo: {
         "@type": "ImageObject",
-        url: `${BASE}/card-rummy-logo.webp`,
+        url: `${BASE}/card-rummy.webp`,
         ...imageObjectLicensing,
         creditText: "Card Rummy logo",
       },

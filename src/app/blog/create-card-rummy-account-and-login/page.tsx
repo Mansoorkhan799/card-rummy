@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Script from 'next/script';
 import BlogPostSchema from '@/components/BlogPostSchema';
 import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
+import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
   title: 'How to Create Card Rummy Account & Login',
@@ -230,14 +231,7 @@ export default function CreateAccountLogin() {
                 <h2 className="text-3xl font-bold mb-4 text-white">Ready to Start Playing?</h2>
                 <p className="text-white text-lg mb-8 max-w-2xl mx-auto">Now that you know how to create an account and login to Card Rummy, you're ready to start playing Teen Patti, Rummy, and other card games to earn real money. Download the app today!</p>
                 
-                <Link 
-                  href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-white text-accent font-bold py-4 px-8 rounded-full hover:bg-[#0A1029] transition-all shadow-2xl hover:shadow-3xl transform hover:scale-105"
-                >
-                  DOWNLOAD NOW
-                </Link>
+                <CtaButton>DOWNLOAD NOW</CtaButton>
               </div>
             </div>
           </div>

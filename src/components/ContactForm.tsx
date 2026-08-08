@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import CtaButton from '@/components/CtaButton';
 
 type FormData = {
   name: string;
@@ -128,15 +129,9 @@ export default function ContactForm() {
         </div>
         
         <div className="flex justify-center">
-          <button
-            type="submit"
-            className="bg-accent hover:bg-accent-hover text-white font-medium py-2 px-6 rounded inline-flex items-center"
-          >
-            <span>Send Message</span>
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-            </svg>
-          </button>
+          <CtaButton as="button" type="submit" icon="arrow">
+            Send Message
+          </CtaButton>
         </div>
       </form>
     </div>

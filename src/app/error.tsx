@@ -1,5 +1,7 @@
 'use client';
 
+import CtaButton from '@/components/CtaButton';
+
 export default function Error({
   reset,
 }: {
@@ -12,12 +14,9 @@ export default function Error({
       <p className="text-gray-400 mb-6 text-center">
         We apologize for the inconvenience. Please try again.
       </p>
-      <button
-        onClick={reset}
-        className="bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
-      >
+      <CtaButton as="button" icon="arrow" onClick={reset}>
         Try again
-      </button>
+      </CtaButton>
     </div>
   );
 } 

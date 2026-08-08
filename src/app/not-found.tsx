@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { Metadata } from 'next';
+import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
   title: 'Page Not Found - Card Rummy',
@@ -18,12 +18,7 @@ export default function NotFound() {
       <p className="text-lg mb-8 text-gray-300 max-w-lg mx-auto">
         The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
       </p>
-      <Link 
-        href="/"
-        className="bg-accent hover:bg-accent-hover text-[#06091F] font-bold py-3 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
-      >
-        Return to Homepage
-      </Link>
+      <CtaButton href="/" icon="arrow">Return to Homepage</CtaButton>
     </div>
   );
 } 

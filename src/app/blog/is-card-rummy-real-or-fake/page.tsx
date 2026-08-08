@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BlogPostSchema from '@/components/BlogPostSchema';
 import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
+import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
   title: 'Is Card Rummy Real or Fake? Complete Guide',
@@ -46,7 +47,7 @@ export default function CardRummyRealOrFakePage() {
     "@type": "BlogPosting",
     "headline": "Is Card Rummy Real or Fake to Earn Money? - Complete Guide 2026",
     "description": "Discover if Card Rummy app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps.",
-    "image": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+    "image": "https://cardrummyapp.com.pk/card-rummy.webp",
     "author": {
       "@type": "Organization",
       "name": "Card Rummy",
@@ -57,7 +58,7 @@ export default function CardRummyRealOrFakePage() {
       "name": "Card Rummy",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+        "url": "https://cardrummyapp.com.pk/card-rummy.webp",
         ...imageObjectLicensing,
         "creditText": "Card Rummy logo"
       }
@@ -320,17 +321,7 @@ export default function CardRummyRealOrFakePage() {
             
             {/* CTA Button */}
             <div className="mt-6 text-center">
-              <a 
-                href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
-              >
-                <span>Download Official Card Rummy</span>
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-              </a>
+              <CtaButton>Download Official Card Rummy</CtaButton>
             </div>
           </div>
         </section>

@@ -9,12 +9,12 @@
   "icons": [
     {
       "src": "/favicon.ico",
-      "sizes": "16x16 32x32 48x48",
+      "sizes": "256x256",
       "type": "image/x-icon"
     },
     {
       "src": "/card-rummy-logo.webp",
-      "sizes": "192x192 512x512",
+      "sizes": "512x512",
       "type": "image/webp",
       "purpose": "any maskable"
     },

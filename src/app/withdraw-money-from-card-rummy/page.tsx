@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
+import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
   title: 'How to Withdraw Money from Card Rummy? | Fast & Secure Withdrawal Guide 2026',
@@ -32,19 +33,12 @@ export default function WithdrawMoneyPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              How to Withdraw Money from Card Rummy?
+              How to Withdraw Money from <span className="text-[#FFA500]">Card Rummy</span>?
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8">
               Fast, Secure & Easy Cash Out with JazzCash, EasyPaisa & Bank Card
             </p>
-            <Link
-              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-accent text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/90 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"
-            >
-              Download & Start Earning
-            </Link>
+            <CtaButton>Download & Start Earning</CtaButton>
             <div className="mt-10 flex justify-center">
               <div className="relative w-48 h-48 md:w-56 md:h-56">
                 <Image
@@ -310,14 +304,7 @@ export default function WithdrawMoneyPage() {
             <p className="text-lg text-gray-300 mb-8">
               Download Card Rummy now and start withdrawing your earnings securely!
             </p>
-            <Link
-              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-accent text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/90 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"
-            >
-              Download Card Rummy Now
-            </Link>
+            <CtaButton>Download Card Rummy Now</CtaButton>
           </div>
         </div>
       </section>
@@ -342,7 +329,7 @@ export default function WithdrawMoneyPage() {
                   "name": "Card Rummy",
                   "logo": {
                   "@type": "ImageObject",
-                  "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+                  "url": "https://cardrummyapp.com.pk/card-rummy.webp",
                   ...imageObjectLicensing,
                   "creditText": "Card Rummy logo"
                 }

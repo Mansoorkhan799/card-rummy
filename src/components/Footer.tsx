@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CtaButton from '@/components/CtaButton';
 
 export default function Footer() {
   return (
@@ -100,20 +101,7 @@ export default function Footer() {
             <p className="text-sm text-gray-300 mb-4">
               Download Card Rummy to enjoy the best card gaming experience and earn real cash rewards on your mobile device.
             </p>
-            <a 
-              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-              target="_blank" 
-              rel="noopener noreferrer" 
-              aria-label="Download Card Rummy app for Android"
-              className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
-            >
-              <span>DOWNLOAD NOW</span>
-              <div className="download-icon ml-2 bg-[#f97316] rounded-full p-2">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
-              </div>
-            </a>
+            <CtaButton ariaLabel="Download Card Rummy app for Android">DOWNLOAD NOW</CtaButton>
           </div>
         </div>
         

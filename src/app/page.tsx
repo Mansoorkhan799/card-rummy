@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Script from 'next/script';
 import { Metadata } from 'next';
 import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
+import CtaButton from '@/components/CtaButton';
 
 // This additional metadata enhances the page-specific SEO
 export const metadata: Metadata = {
@@ -47,20 +48,20 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://cardrummyapp.com.pk/card-rummy.webp',
-        width: 1024,
-        height: 1024,
+        width: 512,
+        height: 512,
         alt: 'Card Rummy - Pakistan\'s #1 card game app. Play Teen Patti, Rummy, Dragon vs Tiger.'
       },
       {
         url: 'https://cardrummyapp.com.pk/feature/og-image.webp',
-        width: 1200,
-        height: 630,
+        width: 512,
+        height: 512,
         alt: 'Card Rummy - Premier Card Gaming Platform'
       },
       {
         url: 'https://cardrummyapp.com.pk/feature/og-image-square.webp',
-        width: 800,
-        height: 800,
+        width: 512,
+        height: 512,
         alt: 'Card Rummy - Premier Card Gaming Platform'
       }
     ],
@@ -113,8 +114,8 @@ export default function Home() {
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://cardrummyapp.com.pk/card-rummy.webp",
-          "width": 1024,
-          "height": 1024,
+          "width": 512,
+          "height": 512,
           "name": "Card Rummy",
           "description": "Card Rummy - Pakistan's #1 card game app. Official brand image. Play Teen Patti, Rummy, Dragon vs Tiger. Download Card Rummy APK for Android.",
           ...imageObjectLicensing
@@ -127,8 +128,8 @@ export default function Home() {
         "contentUrl": "https://cardrummyapp.com.pk/card-rummy.webp",
         "name": "Card Rummy",
         "description": "Card Rummy - Pakistan's premier card game app. Official Card Rummy brand image with playing cards. Play Teen Patti, Rummy, Dragon vs Tiger and win real cash. Download Card Rummy APK.",
-        "width": 1024,
-        "height": 1024,
+        "width": 512,
+        "height": 512,
         ...imageObjectLicensing
       },
       {
@@ -138,7 +139,7 @@ export default function Home() {
         "url": "https://cardrummyapp.com.pk/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+          "url": "https://cardrummyapp.com.pk/card-rummy.webp",
           "width": 512,
           "height": 512,
           ...imageObjectLicensing,
@@ -313,19 +314,7 @@ export default function Home() {
 
             {/* Download Button */}
             <div className="flex justify-center my-8">
-              <a 
-                href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group"
-              >
-                <span>DOWNLOAD NOW</span>
-                <div className="ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                  </svg>
-                </div>
-              </a>
+              <CtaButton>DOWNLOAD NOW</CtaButton>
             </div>
 
             {/* Stats Grid with improved spacing */}
@@ -606,22 +595,19 @@ export default function Home() {
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Refer & Earn</p>
             </div>
-          </div>
 
-          {/* Additional Screenshots */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Recharge Rebate */}
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl">
-              <Image
+                <Image
                   src="/card-rummy-recharge-rebate.webp"
                   alt="Card Rummy Recharge Rebate"
                   width={400}
                   height={711}
                   className="w-full h-auto"
-                loading="lazy"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Recharge Rebate</p>
             </div>
@@ -629,15 +615,15 @@ export default function Home() {
             {/* Bind Email */}
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl">
-              <Image
+                <Image
                   src="/card-rummy-bind-mail.webp"
                   alt="Card Rummy Bind Email"
                   width={400}
                   height={711}
                   className="w-full h-auto"
-                loading="lazy"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Account Security</p>
             </div>
@@ -925,19 +911,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center">
-          <a 
-            href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-4 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
-          >
-            <span className="text-lg">DOWNLOAD NOW</span>
-            <div className="download-icon ml-2 bg-[#f97316] rounded-full p-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-              </svg>
-            </div>
-          </a>
+          <CtaButton>DOWNLOAD NOW</CtaButton>
           </div>
         </div>
       </section>

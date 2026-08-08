@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
+import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
   title: 'About Card Rummy - Pakistan\'s Premier Card Gaming Platform',
@@ -29,9 +30,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://cardrummyapp.com.pk/card-rummy-logo.webp",
-        width: 1200,
-        height: 630,
+        url: "https://cardrummyapp.com.pk/feature/og-image.webp",
+        width: 512,
+        height: 512,
         alt: "About Card Rummy - Premier Card Gaming Platform",
       }
     ],
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: 'About Card Rummy - Pakistan\'s Premier Card Gaming Platform',
     description: 'Learn about Card Rummy, our history, mission, and vision for creating the best card gaming platform in Pakistan with real cash rewards.',
-    images: ["https://cardrummyapp.com.pk/card-rummy-logo.webp"],
+    images: ["https://cardrummyapp.com.pk/feature/twitter-card.webp"],
   },
 };
 
@@ -100,12 +101,7 @@ export default function AboutPage() {
             <p className="text-gray-300 mb-6 text-lg">
               We're here to help! Contact our team for any information or queries about Card Rummy.
             </p>
-            <Link 
-              href="/contact-us" 
-              className="inline-block bg-accent hover:bg-accent/90 text-primary font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-            >
-              Contact Us
-            </Link>
+            <CtaButton href="/contact-us" icon="arrow">Contact Us</CtaButton>
           </div>
         </div>
       </div>
@@ -122,7 +118,7 @@ export default function AboutPage() {
               "name": "Card Rummy",
               "alternateName": "3 Patti Card Rummy",
               "url": "https://cardrummyapp.com.pk",
-              "logo": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+              "logo": "https://cardrummyapp.com.pk/card-rummy.webp",
               "description": "Card Rummy is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, Dragon vs Tiger and more with real cash rewards.",
               "foundingDate": "2024",
               "foundingLocation": {

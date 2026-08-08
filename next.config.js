@@ -55,7 +55,7 @@ const nextConfig = {
       // Redirect old 3Patti Blue logo to Card Rummy logo
       {
         source: '/3-patti-blue-logo.webp',
-        destination: '/card-rummy-logo.webp',
+        destination: '/card-rummy.webp',
       },
     ];
   },

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
   title: 'Card Rummy Old Version – Features & Review 2026',
@@ -139,14 +140,7 @@ export default function BlogCardRummyOldVersionFeaturesReview() {
           </p>
 
           <div className="mt-12 text-center">
-            <a 
-              href="https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
-            >
-              Download Card Rummy Latest Version v1.231
-            </a>
+            <CtaButton>Download Card Rummy Latest Version v1.231</CtaButton>
           </div>
         </div>
 
