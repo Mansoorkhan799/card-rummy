@@ -183,12 +183,12 @@ export default function Blog() {
 
         {/* 3Patti Blue Comparison */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">3Patti Blue vs Card Rummy: Which Game Is Better for Earning Real Cash?</h2>
-          <p className="text-gray-300 mb-4">Complete comparison: Features, bonuses, withdrawal speed, game variety & earning potential. Find out which app pays better!</p>
+          <h2 className="text-2xl font-bold mb-4 text-white">3Patti Blue vs Card Rummy: Which App Is Safer?</h2>
+          <p className="text-gray-300 mb-4">Comparing 3Patti Blue and Card Rummy on safety, source verification, and official downloads — find out which app you can trust more before you install.</p>
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
             <span>📅 January 2026</span>
             <span>•</span>
-            <span>8 min read</span>
+            <span>6 min read</span>
           </div>
           <Link href="/blog/3patti-blue-vs-card-rummy" className="text-accent hover:underline font-semibold">
             Read More →
@@ -197,12 +197,12 @@ export default function Blog() {
 
         {/* 3Patti Gold Comparison */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">3Patti Gold vs Card Rummy: Which Game Is Better for Earning Real Cash?</h2>
-          <p className="text-gray-300 mb-4">Detailed comparison: Bonuses, games, withdrawal speed & earning analysis. Discover which app is better for Pakistan players!</p>
+          <h2 className="text-2xl font-bold mb-4 text-white">3Patti Gold vs Card Rummy: Bonus and Rewards System Compared</h2>
+          <p className="text-gray-300 mb-4">A detailed comparison of welcome bonuses, referral rewards, and VIP structure between 3Patti Gold and Card Rummy.</p>
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
             <span>📅 January 2026</span>
             <span>•</span>
-            <span>9 min read</span>
+            <span>6 min read</span>
           </div>
           <Link href="/blog/3patti-gold-vs-card-rummy" className="text-accent hover:underline font-semibold">
             Read More →
@@ -211,12 +211,12 @@ export default function Blog() {
 
         {/* 3Patti Lucky Comparison */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">3Patti Lucky vs Card Rummy: Which Game Is Better for Earning Real Cash?</h2>
-          <p className="text-gray-300 mb-4">Detailed comparison: Games, bonuses, payout speed & earning analysis. Find the best real money app for Pakistan!</p>
+          <h2 className="text-2xl font-bold mb-4 text-white">3Patti Lucky vs Card Rummy: Game Variety and Experience</h2>
+          <p className="text-gray-300 mb-4">Comparing game modes, table variety, and overall gameplay experience between 3Patti Lucky and Card Rummy.</p>
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
             <span>📅 January 2026</span>
             <span>•</span>
-            <span>10 min read</span>
+            <span>6 min read</span>
           </div>
           <Link href="/blog/3patti-lucky-vs-card-rummy" className="text-accent hover:underline font-semibold">
             Read More →
@@ -225,12 +225,12 @@ export default function Blog() {
 
         {/* 3Patti Room Comparison */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">3Patti Room vs Card Rummy: Which Game Is Better for Earning Real Cash?</h2>
-          <p className="text-gray-300 mb-4">Comprehensive comparison: Features, bonuses, withdrawal speed & real earning potential for Pakistan players!</p>
+          <h2 className="text-2xl font-bold mb-4 text-white">3Patti Room vs Card Rummy: Deposit and Withdrawal Process Compared</h2>
+          <p className="text-gray-300 mb-4">Comparing the deposit/withdrawal process, payment methods, and payout speed — a guide for JazzCash and EasyPaisa users.</p>
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
             <span>📅 January 2026</span>
             <span>•</span>
-            <span>11 min read</span>
+            <span>6 min read</span>
           </div>
           <Link href="/blog/3patti-room-vs-card-rummy" className="text-accent hover:underline font-semibold">
             Read More →
@@ -239,8 +239,8 @@ export default function Blog() {
 
         {/* IPs Exceed Issue */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">IPs Exceed Issue in Card Rummy! How to Fix?</h2>
-          <p className="text-gray-300 mb-4">Getting IPs Exceed error? Learn what causes it, how to fix it, and prevent it. Complete troubleshooting guide for Pakistan players 2026.</p>
+          <h2 className="text-2xl font-bold mb-4 text-white">IP Exceed Issue in Card Rummy: Complete Fix Guide (2026)</h2>
+          <p className="text-gray-300 mb-4">What the &quot;IP Exceed&quot; error means, why it happens, and the complete step-by-step process to fix it right away.</p>
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
             <span>📅 March 2026</span>
             <span>•</span>
