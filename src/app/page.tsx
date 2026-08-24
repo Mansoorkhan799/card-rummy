@@ -72,7 +72,10 @@ export const metadata: Metadata = {
     title: 'Card Rummy Pakistan v1.231 Free Download Official APK',
     description: 'Card Rummy 2026 - Pakistan\'s #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!',
     images: ['https://cardrummyapp.com.pk/card-rummy.webp', 'https://cardrummyapp.com.pk/feature/og-image.webp']
-  }
+  },
+  alternates: {
+    canonical: 'https://cardrummyapp.com.pk/',
+  },
 };
 
 export default function Home() {
