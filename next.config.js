@@ -82,9 +82,27 @@ const nextConfig = {
     ];
   },
 
-  // Next.js 16 uses Turbopack by default. An explicit (even empty) turbopack
-  // config tells Next this project is not relying on a leftover webpack() hook.
-  turbopack: {},
+  // Skip Next.js legacy polyfills. Target browsers already ship Array.at,
+  // Object.hasOwn, etc. (Lighthouse: Legacy JavaScript ~14KB).
+  turbopack: {
+    resolveAlias: {
+      '../build/polyfills/polyfill-module': './src/lib/empty-polyfill.js',
+      'next/dist/build/polyfills/polyfill-module': './src/lib/empty-polyfill.js',
+      'next/dist/esm/build/polyfills/polyfill-module': './src/lib/empty-polyfill.js',
+    },
+  },
+
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        '../build/polyfills/polyfill-module': false,
+        'next/dist/build/polyfills/polyfill-module': false,
+        'next/dist/esm/build/polyfills/polyfill-module': false,
+      };
+    }
+    return config;
+  },
 
   // Optimize headers
   async headers() {

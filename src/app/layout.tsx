@@ -15,6 +15,7 @@ import Footer from "@/components/Footer";
 import DeferredStyles from "@/components/DeferredStyles";
 import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
 import WebVitalsTracker from "@/components/WebVitalsTracker";
+import DeferredAnalytics from "@/components/DeferredAnalytics";
 import { MobileMenuProvider } from "@/components/MobileMenuProvider";
 
 export const viewport: Viewport = {
@@ -152,37 +153,10 @@ export default function RootLayout({
         <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="512x512" />
         <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
         
-        {/* Preconnect to external domains for faster loading */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        
         {/* Defer manifest to avoid critical path (374ms latency) - load after page interactive */}
         <Script id="deferred-manifest" strategy="lazyOnload">
           {`(function(){var l=document.createElement('link');l.rel='manifest';l.href='/manifest.json';document.head.appendChild(l);})();`}
         </Script>
-        {/* Google Analytics - only load if GA ID is set in env (use NEXT_PUBLIC_GA_MEASUREMENT_ID) */}
-        {typeof process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID === 'string' &&
-         process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID &&
-         !/^G-XXXXXXXXXX$/i.test(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID) && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-              strategy="lazyOnload"
-            />
-            <Script id="google-analytics" strategy="lazyOnload">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
-                  page_path: window.location.pathname,
-                  send_page_view: false,
-                  transport_type: 'beacon'
-                });
-              `}
-            </Script>
-          </>
-        )}
       </head>
       <body
         className={`${poppins.className} antialiased bg-primary text-white min-h-screen flex flex-col`}
@@ -204,6 +178,7 @@ export default function RootLayout({
           <ScrollToTopWrapper />
         </MobileMenuProvider>
         <WebVitalsTracker />
+        <DeferredAnalytics />
         
         {/* Structured data for Organization */}
         <Script
