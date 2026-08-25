@@ -6,7 +6,7 @@ import { NextRequest, NextResponse } from 'next/server';
  * This site has no search. 301 to the same path without `s` so Search Console
  * drops the "alternate page with proper canonical" entry after recrawl.
  */
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const url = request.nextUrl.clone();
   if (!url.searchParams.has('s')) {
     return NextResponse.next();

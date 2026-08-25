@@ -3,6 +3,8 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   compress: true,
+  // Dev-only: allow HMR when the page is opened as 127.0.0.1 instead of localhost
+  allowedDevOrigins: ['127.0.0.1', 'localhost'],
   
   // Target modern browsers - no legacy polyfills
   compiler: {
@@ -80,12 +82,18 @@ const nextConfig = {
     ];
   },
 
+  // Next.js 16 uses Turbopack by default. An explicit (even empty) turbopack
+  // config tells Next this project is not relying on a leftover webpack() hook.
+  turbopack: {},
+
   // Optimize headers
   async headers() {
     return [
-      // HTML pages: always revalidate so Googlebot gets fresh content
+      // HTML pages: always revalidate so Googlebot gets fresh content.
+      // Exclude /_next/static so Next.js can manage hashed-asset caching
+      // (custom Cache-Control there breaks HMR in development).
       {
-        source: '/:path*',
+        source: '/((?!_next/static|_next/image).*)',
         headers: [
           {
             key: 'Cache-Control',
@@ -131,16 +139,6 @@ const nextConfig = {
           },
         ],
       },
-      // Immutable cache only for fingerprinted static assets
-      {
-        source: '/_next/static/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
       // Public images: long cache but allow revalidation
       {
         source: '/:path*.webp',
@@ -174,40 +172,6 @@ const nextConfig = {
         ],
       },
     ];
-  },
-
-  // Handle webpack configuration
-  webpack: (config, { dev, isServer }) => {
-    // Enable proper static file handling
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-      };
-    }
-
-    // Optimize for development
-    if (dev) {
-      config.watchOptions = {
-        poll: 1000,
-        aggregateTimeout: 300,
-      };
-    }
-
-    // Target modern browsers - don't transpile modern JavaScript features
-    if (!isServer) {
-      config.target = ['web', 'es2022'];
-      
-      // Disable Next.js polyfills for modern browsers (Lighthouse: Legacy JavaScript)
-      // Saves ~11KB - polyfills for Array.at, Object.hasOwn, etc. aren't needed for Chrome 90+, Safari 14+, etc.
-      config.resolve.alias = {
-        ...config.resolve.alias,
-        '../build/polyfills/polyfill-module': false,
-        'next/dist/build/polyfills/polyfill-module': false,
-      };
-    }
-
-    return config;
   },
 
   // Enable experimental features
