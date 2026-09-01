@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
+import { FACEBOOK_PROFILE_URL } from '@/lib/appFacts';
 import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
@@ -126,8 +127,7 @@ export default function AboutPage() {
                 "name": "Pakistan"
               },
               "sameAs": [
-                "https://facebook.com/cardrummy",
-                "https://twitter.com/cardrummy"
+                FACEBOOK_PROFILE_URL
               ],
               "founder": {
                 "@type": "Person",

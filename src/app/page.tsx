@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from 'next/link';
-import Script from 'next/script';
 import { Metadata } from 'next';
 import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
+import { APP_AGGREGATE_RATING, APP_DOWNLOAD_URL, APP_SCREENSHOTS, FACEBOOK_PROFILE_URL } from '@/lib/appFacts';
 import CtaButton from '@/components/CtaButton';
 
 // This additional metadata enhances the page-specific SEO
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     images: ['https://cardrummyapp.com.pk/card-rummy.webp', 'https://cardrummyapp.com.pk/feature/og-image.webp']
   },
   alternates: {
-    canonical: 'https://cardrummyapp.com.pk/',
+    canonical: 'https://cardrummyapp.com.pk',
   },
 };
 
@@ -149,7 +149,7 @@ export default function Home() {
           "creditText": "Card Rummy logo"
         },
         "sameAs": [
-          "https://www.facebook.com/share/1at8tjJcje/"
+          FACEBOOK_PROFILE_URL
         ],
         "contactPoint": {
           "@type": "ContactPoint",
@@ -165,26 +165,17 @@ export default function Home() {
         "applicationCategory": "GameApplication",
         "image": "https://cardrummyapp.com.pk/card-rummy.webp",
         "logo": "https://cardrummyapp.com.pk/card-rummy.webp",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.5",
-          "ratingCount": "500000"
-        },
+        "aggregateRating": APP_AGGREGATE_RATING,
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "PKR"
         },
-        "downloadUrl": "https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689",
+        "downloadUrl": APP_DOWNLOAD_URL,
         "softwareVersion": "V1.231",
         "fileSize": "49MB",
         "description": "Card Rummy is Pakistan's most popular online card gaming app where players earn real money by playing Teen Patti, Rummy, Dragon vs Tiger, Andar Bahar, and more. It supports fast deposits and withdrawals via JazzCash and EasyPaisa, offers daily bonuses and VIP rewards, and has over 500,000 active players across Pakistan.",
-        "screenshot": [
-          "https://cardrummyapp.com.pk/card-rummy.webp",
-          "https://cardrummyapp.com.pk/card-rummy-game-interface.webp",
-          "https://cardrummyapp.com.pk/card-rummy-games.webp",
-          "https://cardrummyapp.com.pk/card-rummy-earn-bonus.webp"
-        ],
+        "screenshot": [...APP_SCREENSHOTS],
         "author": {
           "@type": "Organization",
           "name": "Card Rummy"
@@ -288,11 +279,8 @@ export default function Home() {
 
   return (
     <>
-      {/* Schema.org JSON-LD */}
-      <Script
-        id="homepage-schema"
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       
@@ -903,7 +891,7 @@ export default function Home() {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-800">
-              <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Operating System</td><td className="py-3 px-6 text-gray-300">Android 4.1</td><td className="py-3 px-6 text-gray-300">Android 8.0 or above</td></tr>
+              <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Operating System</td><td className="py-3 px-6 text-gray-300">Android 5.0+</td><td className="py-3 px-6 text-gray-300">Android 8.0 or above</td></tr>
               <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">RAM</td><td className="py-3 px-6 text-gray-300">2GB or more</td><td className="py-3 px-6 text-gray-300">4GB or more</td></tr>
               <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Storage Space</td><td className="py-3 px-6 text-gray-300">At least 500 MB free</td><td className="py-3 px-6 text-gray-300">1GB free space</td></tr>
               <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">Processor</td><td className="py-3 px-6 text-gray-300">Quad-core 1.5 GHz</td><td className="py-3 px-6 text-gray-300">Octa-core 2.0 GHz</td></tr>

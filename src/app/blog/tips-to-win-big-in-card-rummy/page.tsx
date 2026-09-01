@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import BlogPostSchema from '@/components/BlogPostSchema';
-import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
 import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
@@ -39,6 +37,7 @@ export default function TipsToWinBig() {
         description="Discover expert strategies and proven tips to maximize your winnings in Card Rummy. Learn how to win big in Teen Patti, Rummy, and other card games."
         slug="tips-to-win-big-in-card-rummy"
         datePublished="2026-01-20"
+        dateModified="2026-01-20"
       />
       <article className="min-h-screen bg-[#060A20]">
         <div className="container mx-auto px-4 py-12">
@@ -284,39 +283,6 @@ export default function TipsToWinBig() {
           </div>
         </div>
       </article>
-
-      <Script
-        id="blog-post-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": "Tips to Win Big in Card Rummy - Expert Strategies",
-            "description": "Discover expert strategies and tips to maximize your winnings in Teen Patti, Rummy, and other card games.",
-            "datePublished": "2026-01-20T00:00:00Z",
-            "dateModified": new Date().toISOString(),
-            "author": {
-              "@type": "Organization",
-              "name": "Card Rummy Team",
-              "url": "https://cardrummyapp.com.pk"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Card Rummy",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://cardrummyapp.com.pk/card-rummy.webp",
-                ...imageObjectLicensing
-              }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://cardrummyapp.com.pk/blog/tips-to-win-big-in-card-rummy"
-            }
-          })
-        }}
-      />
     </>
   );
 }

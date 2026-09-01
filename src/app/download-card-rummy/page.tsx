@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { APP_AGGREGATE_RATING, APP_DOWNLOAD_URL, APP_SCREENSHOTS } from '@/lib/appFacts';
 import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
@@ -66,22 +67,13 @@ export default function DownloadPage() {
       "priceCurrency": "PKR",
       "availability": "https://schema.org/InStock"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "ratingCount": "600000",
-      "bestRating": "5"
-    },
-    "downloadUrl": "https://pkcardrummy.com/?from_gameid=6276686&channelCode=6191689",
+    "aggregateRating": APP_AGGREGATE_RATING,
+    "downloadUrl": APP_DOWNLOAD_URL,
     "softwareVersion": "V1.231",
     "fileSize": "49MB",
     "datePublished": "2026-01-03",
     "description": "Download Card Rummy APK free for Android. Play Teen Patti, Rummy, Dragon Tiger & more. Earn real cash with JazzCash & EasyPaisa.",
-    "screenshot": [
-      "https://cardrummyapp.com.pk/card-rummy-screenshot1.webp",
-      "https://cardrummyapp.com.pk/card-rummy-screenshot2.webp",
-      "https://cardrummyapp.com.pk/card-rummy-screenshot3.webp"
-    ],
+    "screenshot": [...APP_SCREENSHOTS],
     "image": "https://cardrummyapp.com.pk/card-rummy.webp",
     "author": {
       "@type": "Organization",

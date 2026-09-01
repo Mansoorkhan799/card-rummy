@@ -17,6 +17,7 @@ import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
 import WebVitalsTracker from "@/components/WebVitalsTracker";
 import DeferredAnalytics from "@/components/DeferredAnalytics";
 import { MobileMenuProvider } from "@/components/MobileMenuProvider";
+import { ORGANIZATION_JSON_LD } from "@/lib/appFacts";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -123,7 +124,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Card Rummy Pakistan v1.231 Free Download Official APK",
     description: "Card Rummy 2026 - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
-    creator: "@cardrummy",
     images: [
       {
         url: "https://cardrummyapp.com.pk/feature/twitter-card.webp",
@@ -179,49 +179,10 @@ export default function RootLayout({
         </MobileMenuProvider>
         <WebVitalsTracker />
         <DeferredAnalytics />
-        
-        {/* Structured data for Organization */}
-        <Script
-          id="organization-schema"
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Card Rummy",
-              "url": "https://cardrummyapp.com.pk",
-              "logo": "https://cardrummyapp.com.pk/card-rummy.webp",
-              "description": "Card Rummy is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, and many other card games with real cash rewards.",
-              "sameAs": [
-                "https://facebook.com/cardrummy",
-                "https://twitter.com/cardrummy"
-              ]
-            })
-          }}
-        />
-        
-        {/* Structured data for SoftwareApplication */}
-        <Script
-          id="app-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "name": "Card Rummy",
-              "operatingSystem": "Android",
-              "applicationCategory": "GameApplication",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "PKR"
-              },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "ratingCount": "500000"
-              }
-            })
+            __html: JSON.stringify(ORGANIZATION_JSON_LD),
           }}
         />
       </body>

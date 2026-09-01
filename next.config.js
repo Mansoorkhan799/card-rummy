@@ -33,6 +33,11 @@ const nextConfig = {
         destination: '/about-us',
         permanent: true,
       },
+      {
+        source: '/blog/create-account-login',
+        destination: '/blog/create-card-rummy-account-and-login',
+        permanent: true,
+      },
       // Malformed URLs Google crawled — send them home
       {
         source: '/\\$',

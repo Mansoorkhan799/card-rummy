@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 import BlogPostSchema from '@/components/BlogPostSchema';
-import { imageObjectLicensing } from '@/lib/schemaImageLicensing';
 import CtaButton from '@/components/CtaButton';
 
 export const metadata: Metadata = {
@@ -39,6 +37,7 @@ export default function CreateAccountLogin() {
         description="Learn how to create your Card Rummy account and login with our step-by-step guide. Get started playing games and earning rewards in minutes."
         slug="create-card-rummy-account-and-login"
         datePublished="2026-01-20"
+        dateModified="2026-01-20"
       />
       <article className="min-h-screen bg-[#060A20]">
         <div className="container mx-auto px-4 py-12">
@@ -237,39 +236,6 @@ export default function CreateAccountLogin() {
           </div>
         </div>
       </article>
-
-      <Script
-        id="blog-post-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": "How to Create Account and Login? - Card Rummy",
-            "description": "Learn how to create an account and login to Card Rummy. Step by step guide for registration and accessing your account.",
-            "datePublished": "2026-01-20T00:00:00Z",
-            "dateModified": new Date().toISOString(),
-            "author": {
-              "@type": "Organization",
-              "name": "Card Rummy Team",
-              "url": "https://cardrummyapp.com.pk"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Card Rummy",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://cardrummyapp.com.pk/card-rummy.webp",
-                ...imageObjectLicensing
-              }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://cardrummyapp.com.pk/blog/create-card-rummy-account-and-login"
-            }
-          })
-        }}
-      />
     </>
   );
 }

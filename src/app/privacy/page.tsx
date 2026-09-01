@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     url: 'https://cardrummyapp.com.pk/privacy',
     siteName: 'Card Rummy',
     type: 'website',
+    images: [
+      {
+        url: 'https://cardrummyapp.com.pk/feature/og-image.webp',
+        width: 512,
+        height: 512,
+        alt: 'Card Rummy Privacy Policy',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://cardrummyapp.com.pk/privacy',

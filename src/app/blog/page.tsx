@@ -29,6 +29,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://cardrummyapp.com.pk/blog",
   },
+  openGraph: {
+    title: 'Card Rummy Blog - Guides, Tips, Reviews & Tutorials 2026',
+    description: 'Complete Card Rummy blog 2026: App reviews, comparison guides, beginner tutorials, tips & tricks, bonuses guide, safety tips, and responsible gaming.',
+    url: "https://cardrummyapp.com.pk/blog",
+    siteName: "Card Rummy",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://cardrummyapp.com.pk/feature/og-image.webp",
+        width: 512,
+        height: 512,
+        alt: "Card Rummy Blog",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: 'Card Rummy Blog - Guides, Tips, Reviews & Tutorials 2026',
+    description: 'Complete Card Rummy blog 2026: App reviews, comparison guides, beginner tutorials, tips & tricks, bonuses guide, safety tips, and responsible gaming.',
+    images: ["https://cardrummyapp.com.pk/feature/twitter-card.webp"],
+  },
 };
 
 export default function Blog() {
