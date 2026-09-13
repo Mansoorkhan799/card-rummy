@@ -92,9 +92,6 @@ export const metadata: Metadata = {
       { url: '/favicon.ico', type: 'image/x-icon' }
     ]
   },
-  verification: {
-    google: "8a7c21f6e90a89ef",
-  },
   alternates: {
     canonical: "https://cardrummyapp.com.pk",
   },
